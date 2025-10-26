@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { Noto_Kufi_Arabic } from 'next/font/google'
 import '../globals.css'
 import Header from '@/components/navigation/header'
+import { Locale } from '@/lib/i18n'
 
- type Params = { lang: 'en' | 'ar' }
+ type Params = { lang:  Locale}
 
  
  
