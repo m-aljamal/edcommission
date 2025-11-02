@@ -1,4 +1,4 @@
-import { Project } from "@/lib/content"
+import { Project } from "@/types"
 import { Locale } from "@/lib/i18n"
 import { BarChart3, Calendar, MapPin, Users } from "lucide-react"
 import Image from "next/image" 

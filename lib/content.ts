@@ -1,3 +1,4 @@
+import { Project } from "@/types"
 import type { Locale } from "./i18n"
 import { promises as fs } from "fs"
 import path from "path"
@@ -15,47 +16,7 @@ export interface BlogPost {
   tags: string[]
 }
 
-export interface Project {
-  id: string
-  title: string
-  slug: string
-  description: string
-  fullDescription: string
-  importance: string
-  importanceList:string[]
-  components:{
-    title: string
-    description:string
-  }
-  image:string 
-  gallery:string[]
-  videoUrl:string 
-  location:string 
-  beneficiaries:number 
-  status:string 
-  startDate:string 
-  endDate: string 
-  budget: number 
-  partners: string[]
-  objectives:string[]
-  statistics:{
-    schoolsRenovated:{
-      month: string 
-      count: number 
-    }[]
-    budgetDistribution: {
-      name:string 
-      value:number 
-    }[]
-    impactMetrics:{
-      enrollmentIncrease:number 
-      dropoutReduction:number 
-      academicPerformance:number 
-      teacherSatisfaction:number
-    }
-  }
  
-}
 
 // Get all blog posts for a specific language
 export async function getBlogPosts(lang: Locale): Promise<BlogPost[]> {

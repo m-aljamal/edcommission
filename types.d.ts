@@ -151,12 +151,12 @@ export interface Project {
   slug: string
   description: string
   fullDescription: string
-  importance: string
+  importance:   string
   importanceList:string[]
   components:{
     title: string
     description:string
-  }
+  }[]
   image:string 
   gallery:string[]
   videoUrl:string 
