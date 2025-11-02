@@ -1,0 +1,122 @@
+{
+  "id": "wajido-girls",
+  "title": "Wajido Al-Tariq School Project – Girls' Section",
+  "slug": "wajido-al-tariq-school-for-girls",
+  "description": "Children in the primary education phase",
+  "fullDescription": "\nWajido Al-Tariq School for Girls is the designated female extension of the Wajido Al-Tariq School in the town of Ma'arat Al-Atarib. It operates under a two-shift system, with a full study period allocated for girls under the supervision of an independent administration. This shift includes approximately **350 female students** who receive their education in a safe environment, supervised by a qualified female teaching staff. The educational, health, and psychological programs are integrated to address the students' specific needs and circumstances.\n      ",
+  "importance": "\nIt provides a safe educational environment for girls, including orphans and others, to **empower them academically and psychologically** and reduce educational loss. It contributes to building conscious, leadership personalities through integrated educational and psychological services, supporting their social and psychological growth.\n      ",
+  "importanceList": [
+    "Ensuring the continuity of education for hundreds of girls under difficult circumstances.",
+    "Strengthening the students' personalities and increasing their community participation.",
+    "Reducing the school dropout rate among girls.",
+    "Empowering girls to contribute to building their community in the future."
+  ],
+  "components": [
+    {
+      "title": "• Academic Education and Rehabilitation:",
+      "description": "Adopting the official curriculum supported by collective and individual remedial plans, with a classroom environment that respects privacy and fosters constructive communication between female teachers and students."
+    },
+    {
+      "title": "• Health and Nutritional Care: ",
+      "description": "Providing healthy meals, conducting periodic medical examinations, organizing public health awareness campaigns, and ensuring a clean and safe school environment."
+    },
+    {
+      "title": "• Psychological Support and Protection:",
+      "description": "Individual and group psychological support sessions for girls, training for the educational staff, and preparing an environment free of discrimination and violence, taking into account the needs of girls to overcome the effects of war."
+    },
+    {
+      "title": "• Behavioral Education and Value Inculcation: ",
+      "description": "Values: Activating purposeful educational programs that promote self-confidence and positive behavior, while integrating extracurricular activities that encourage teamwork and early leadership."
+    },
+    {
+      "title": "• Skills and Educational Activities :",
+      "description": "Implementing activities in the fields of arts, agriculture, and handicrafts, and organizing festivals and exhibitions to showcase students' work and develop their personalities."
+    },
+    {
+      "title": "• Logistics Support: ",
+      "description": "Logistics: Distributing school supplies at the beginning of each year, providing heating, and conducting periodic maintenance of the infrastructure to ensure the continuity of the educational process."
+    }
+  ],
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
+  "gallery": [
+    "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "location": "Syria - Aleppo Countryside - Ma'arat Al-Atarib",
+  "beneficiaries": 350,
+  "status": "in-progress",
+  "startDate": "2015-01-15",
+  "endDate": "",
+  "budget": 0,
+  "partners": [
+    "The Islamic Community of Bosnia and Herzegovina (Bosnian Islamic Authority)",
+    "Ministry of Education"
+  ],
+  "objectives": [
+    "Enable girls to continue their primary education regularly.",
+    "Develop the academic and behavioral skills of students.",
+    "Provide psychological and social support to help them overcome trauma.",
+    "Enhance the moral and educational values of girls.",
+    "Provide protection and care for orphaned girls and those with special circumstances."
+  ],
+  "statistics": {
+    "schoolsRenovated": [
+      {
+        "month": "January",
+        "count": 0
+      },
+      {
+        "month": "February",
+        "count": 1
+      },
+      {
+        "month": "March",
+        "count": 2
+      },
+      {
+        "month": "April",
+        "count": 3
+      },
+      {
+        "month": "May",
+        "count": 4
+      },
+      {
+        "month": "June",
+        "count": 6
+      },
+      {
+        "month": "July",
+        "count": 8
+      }
+    ],
+    "budgetDistribution": [
+      {
+        "name": "Structural Repairs",
+        "value": 35
+      },
+      {
+        "name": "School Equipment",
+        "value": 25
+      },
+      {
+        "name": "Sanitary Facilities",
+        "value": 15
+      },
+      {
+        "name": "Educational Aids",
+        "value": 15
+      },
+      {
+        "name": "Recreational Spaces",
+        "value": 10
+      }
+    ],
+    "impactMetrics": {
+      "enrollmentIncrease": 28,
+      "dropoutReduction": 45,
+      "academicPerformance": 32,
+      "teacherSatisfaction": 85
+    }
+  }
+}

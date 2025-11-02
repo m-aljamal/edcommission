@@ -1,0 +1,119 @@
+{
+  "id": "shaffi-girls",
+  "title": "Al-Imam Al-Shafi'i School for Child Welfare Project – Girls' Section",
+ "slug": "al-imam-al-shafii-school-for-girls",
+  "description": "Orphaned children in the primary education phase",
+  "fullDescription": "\nAl-Imam Al-Shafi'i School (Girls' Section) is an extension of the educational initiative launched in 2015, aiming to support and educate orphaned girls and children of martyrs in the city of Atarib. The school currently hosts over **700 female students** in a qualified educational building that includes playgrounds and an agricultural garden, managed by qualified staff in cooperation with the Directorate of Education. The school is dedicated to providing **integrated educational, psychological, and social services**, focusing on the academic and behavioral empowerment of girls.\n      ",
+  "importance": "\nIt provides a safe educational environment for girls, including orphans and others, to **empower them academically and psychologically** and reduce educational loss. It contributes to building conscious, leadership personalities through integrated educational and psychological services, supporting their social and psychological growth.\n      ",
+  "importanceList": [
+    "The project has contributed to raising the level of academic attainment and enhancing value-based behavior among children, especially orphans.",
+    "It provided a supportive educational environment that alleviated the effects of loss and deprivation resulting from the war conditions.",
+    "It worked to enhance the children's integration into the community through comprehensive and supportive activities.",
+    "It represented a successful model for humanitarian education in long-term conflict-affected environments."
+  ],
+  "components": [
+    {
+      "title": "• Academic Education and Rehabilitation:",
+      "description": "Adopting the official curriculum supported by collective and individual remedial plans, with a classroom environment that respects privacy and fosters constructive communication between female teachers and students."
+    },
+    {
+      "title": "• Health and Nutritional Care: ",
+      "description": "Providing healthy meals, conducting periodic medical examinations, organizing public health awareness campaigns, and ensuring a clean and safe school environment."
+    },
+    {
+      "title": "• Psychological Support and Protection:",
+      "description": "Individual and group psychological support sessions for girls, training for the educational staff, and preparing an environment free of discrimination and violence that considers the needs of girls to overcome the effects of orphanhood."
+    },
+    {
+      "title": "• Skills and Educational Activities: ",
+      "description": "Implementing activities in the fields of arts, agriculture, and handicrafts, and organizing festivals and exhibitions to showcase students' work and develop their personalities."
+    },
+    {
+      "title": "• Logistics Support: ",
+      "description": "Providing free transportation for orphaned girls, distributing school supplies at the beginning of each year, providing clothing and heating, and conducting periodic maintenance of the infrastructure to ensure the continuity of the educational process."
+    }
+  ],
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
+  "gallery": [
+    "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "location": "Syria - Aleppo Countryside - Atarib",
+  "beneficiaries": 700,
+  "status": "in-progress",
+  "startDate": "2015-01-15",
+  "endDate": "",
+  "budget": 0,
+  "partners": [
+    "The Islamic Community of Bosnia and Herzegovina (Bosnian Islamic Authority)",
+    "Ministry of Education"
+  ],
+  "objectives": [
+    "Provide a safe educational environment for orphaned girls to empower them academically and psychologically.",
+    "Reduce educational loss and enhance motivation through supportive educational plans.",
+    "Psychologically and behaviorally empower girls after losing one or both parents.",
+    "Develop leadership and responsible personalities among students.",
+    "Enhance girls' participation in community life through arts and initiatives.",
+    "Build a female pedagogical model that embraces values, awareness, and self-confidence."
+  ],
+  "statistics": {
+    "schoolsRenovated": [
+      {
+        "month": "January",
+        "count": 0
+      },
+      {
+        "month": "February",
+        "count": 1
+      },
+      {
+        "month": "March",
+        "count": 2
+      },
+      {
+        "month": "April",
+        "count": 3
+      },
+      {
+        "month": "May",
+        "count": 4
+      },
+      {
+        "month": "June",
+        "count": 6
+      },
+      {
+        "month": "July",
+        "count": 8
+      }
+    ],
+    "budgetDistribution": [
+      {
+        "name": "Structural Repairs",
+        "value": 35
+      },
+      {
+        "name": "School Equipment",
+        "value": 25
+      },
+      {
+        "name": "Sanitary Facilities",
+        "value": 15
+      },
+      {
+        "name": "Educational Aids",
+        "value": 15
+      },
+      {
+        "name": "Recreational Spaces",
+        "value": 10
+      }
+    ],
+    "impactMetrics": {
+      "enrollmentIncrease": 28,
+      "dropoutReduction": 45,
+      "academicPerformance": 32,
+      "teacherSatisfaction": 85
+    }
+  }
+}

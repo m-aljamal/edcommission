@@ -19,16 +19,42 @@ export interface Project {
   id: string
   title: string
   slug: string
-  excerpt: string
   description: string
-  status: string
-  startDate: string
-  endDate: string
-  budget: string
-  beneficiaries: string
-  image: string
-  category: string
-  tags: string[]
+  fullDescription: string
+  importance: string
+  importanceList:string[]
+  components:{
+    title: string
+    description:string
+  }
+  image:string 
+  gallery:string[]
+  videoUrl:string 
+  location:string 
+  beneficiaries:number 
+  status:string 
+  startDate:string 
+  endDate: string 
+  budget: number 
+  partners: string[]
+  objectives:string[]
+  statistics:{
+    schoolsRenovated:{
+      month: string 
+      count: number 
+    }[]
+    budgetDistribution: {
+      name:string 
+      value:number 
+    }[]
+    impactMetrics:{
+      enrollmentIncrease:number 
+      dropoutReduction:number 
+      academicPerformance:number 
+      teacherSatisfaction:number
+    }
+  }
+ 
 }
 
 // Get all blog posts for a specific language

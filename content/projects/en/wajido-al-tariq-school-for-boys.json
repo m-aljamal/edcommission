@@ -1,0 +1,122 @@
+{
+  "id": "wajido-boys",
+  "title": "Wajido Al-Tariq School Project – Boys' Section",
+  "slug": "wajido-al-tariq-school-for-boys",
+  "description": "Children in the primary education phase",
+  "fullDescription": "\nWajido Al-Tariq School for Boys is an extension of a pioneering educational project that began in 2013 in Kafr Naha and later moved to Ma'arat Al-Atarib – western Aleppo countryside, following a change in regional control. The school operates under a **'two-shift' (double-session) system**, with this specific shift designated for boys, supervised by an independent administration and a highly qualified and experienced staff. The number of male students at the school is approximately **350**, and they receive integrated educational and pedagogical support, including books and supplies.\n      ",
+  "importance": "\nIt ensures the **continuity of male education** in a stable and safe environment. It develops students' intellectual, social, and psychological skills. It supports impoverished families due to war conditions and reduces the burden on parents. It strengthens social cohesion through integrated, quality education.\n      ",
+  "importanceList": [
+    "Ensuring the continuity of male education in a stable and safe environment.",
+    "Developing the intellectual, social, and psychological skills of students.",
+    "Supporting poor families due to war conditions and alleviating burdens on parents.",
+    "Enhancing community cohesion through integrated, quality education."
+  ],
+  "components": [
+    {
+      "title": "• Academic Education and Rehabilitation:",
+      "description": "A flexible official curriculum that accounts for individual differences, the development of collective and individual remedial plans, and the strengthening of the educational relationship between teachers and students in a supportive learning environment."
+    },
+    {
+      "title": "• Health and Nutritional Care: ",
+      "description": "Providing nutritious meals, organizing periodic medical examinations, conducting health awareness sessions, and maintaining a clean and safe environment that promotes physical and psychological health."
+    },
+    {
+      "title": "• Psychological Support and Protection:",
+      "description": "Individual and group psychological support sessions supervised by specialists, training for teachers, and creating an environment free of violence and discrimination, providing safety and support for children."
+    },
+    {
+      "title": "• Behavioral Education and Value Inculcation: ",
+      "description": "Interactive educational programs that promote positive behavior and self-discipline, and extracurricular activities that instill moral values and enhance social responsibility."
+    },
+    {
+      "title": "• Skills and Educational Activities :",
+      "description": "Organizing artistic, agricultural, and sports activities, along with holding periodic exhibitions and festivals to showcase students' talents and develop their spirit of initiative."
+    },
+    {
+      "title": "• Logistics Support: ",
+      "description": "Providing school supplies and heating, and conducting periodic maintenance of facilities to ensure the sustainability of the school environment."
+    }
+  ],
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
+  "gallery": [
+    "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "location": "Syria - Aleppo Countryside - Ma'arat Al-Atarib",
+  "beneficiaries": 350,
+  "status": "in-progress",
+  "startDate": "2015-01-15",
+  "endDate": "",
+  "budget": 0,
+  "partners": [
+    "The Islamic Community of Bosnia and Herzegovina (Bosnian Islamic Authority)",
+    "Ministry of Education"
+  ],
+  "objectives": [
+    "Enable male children to access safe and organized education.",
+    "Improve academic attainment through support and follow-up lessons.",
+    "Build a balanced personality through educational and values-based programs.",
+    "Provide psychological care for children and help them adapt to a reality affected by a long war.",
+    "Provide special protection for vulnerable groups such as orphans and the severely impoverished."
+  ],
+  "statistics": {
+    "schoolsRenovated": [
+      {
+        "month": "January",
+        "count": 0
+      },
+      {
+        "month": "February",
+        "count": 1
+      },
+      {
+        "month": "March",
+        "count": 2
+      },
+      {
+        "month": "April",
+        "count": 3
+      },
+      {
+        "month": "May",
+        "count": 4
+      },
+      {
+        "month": "June",
+        "count": 6
+      },
+      {
+        "month": "July",
+        "count": 8
+      }
+    ],
+    "budgetDistribution": [
+      {
+        "name": "Structural Repairs",
+        "value": 35
+      },
+      {
+        "name": "School Equipment",
+        "value": 25
+      },
+      {
+        "name": "Sanitary Facilities",
+        "value": 15
+      },
+      {
+        "name": "Educational Aids",
+        "value": 15
+      },
+      {
+        "name": "Recreational Spaces",
+        "value": 10
+      }
+    ],
+    "impactMetrics": {
+      "enrollmentIncrease": 28,
+      "dropoutReduction": 45,
+      "academicPerformance": 32,
+      "teacherSatisfaction": 85
+    }
+  }
+}

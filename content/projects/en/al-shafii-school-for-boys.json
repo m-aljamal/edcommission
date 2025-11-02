@@ -1,0 +1,123 @@
+{
+  "id": "shaffi",
+  "title": "Al-Shafi'i School for Child Welfare Project – Boys' Section",
+  "slug": "al-shafii-school-for-boys",
+  "description": "Orphaned children in the primary education phase",
+  "fullDescription": "\nAl-Shafi'i School for Child Welfare (Boys' Section) was launched in the city of Atarib in 2015 as a specialized educational and humanitarian initiative focused on the academic, psychological, and social care and rehabilitation of **orphaned children** and **children of martyrs**. The school operates within a renovated governmental building and currently hosts over **700 students**, supervised by an educational and administrative staff of approximately 36 employees. The school provides a **safe, integrated educational environment** that addresses the academic, psychological, and values-based development of the child.\n      ",
+  "importance": "\nThis project is a pioneering initiative to support orphaned children in conflict environments, promoting their **educational attainment** and **social integration**. It provides a safe pedagogical environment that mitigates the effects of war and deprivation.\n      ",
+  "importanceList": [
+    "The project has contributed to raising the level of academic attainment and enhancing value-based behavior among children, especially orphans.",
+    "It provided a supportive educational environment that alleviated the effects of loss and deprivation resulting from the war conditions.",
+    "It worked to enhance the children's integration into the community through comprehensive and supportive activities.",
+    "It represented a successful model for humanitarian education in long-term conflict-affected environments."
+  ],
+  "components": [
+    {
+      "title": "• Academic Education and Rehabilitation:",
+      "description": "A flexible official curriculum that accounts for individual differences, the development of collective and individual remedial plans, and the strengthening of the educational relationship between teachers and students in a supportive learning environment."
+    },
+    {
+      "title": "• Health and Nutritional Care: ",
+      "description": "Providing nutritious meals, organizing periodic medical examinations, conducting health awareness sessions, and maintaining a clean and safe environment that promotes physical and psychological health."
+    },
+    {
+      "title": "• Psychological Support and Protection:  ",
+      "description": "Individual and group psychological support sessions supervised by specialists, training for teachers, and creating an environment free of violence and discrimination, providing safety and support for children."
+    },
+    {
+      "title": "• Behavioral Education and Value Inculcation: ",
+      "description": "Interactive educational programs that promote positive behavior and self-discipline, and extracurricular activities that instill moral values and enhance social responsibility."
+    },
+    {
+      "title": "• Skills and Educational Activities: ",
+      "description": "Organizing artistic, agricultural, and sports activities, along with holding periodic exhibitions and festivals to showcase students' talents and develop their spirit of initiative."
+    },
+    {
+      "title": "• Logistics Support: ",
+      "description": "Providing free transportation for orphaned children, securing school supplies, providing clothing and heating, and conducting periodic maintenance of facilities to ensure the sustainability of the school environment."
+    }
+  ],
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
+  "gallery": [
+    "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "location": "Syria - Aleppo Countryside - Atarib",
+  "beneficiaries": 700,
+  "status": "in-progress",
+  "startDate": "2015-01-15",
+  "endDate": "",
+  "budget": 0,
+  "partners": [
+    "The Islamic Community of Bosnia and Herzegovina (Bosnian Islamic Authority)",
+    "Ministry of Education"
+  ],
+  "objectives": [
+    "Provide quality and safe education for orphaned male children and children of martyrs.",
+    "Bridge the educational gap through remedial programs that consider the psychological and educational state of the orphan.",
+    "Support the psychological and social growth of children and help them overcome the effects of trauma.",
+    "Develop moral values and behavioral discipline among students.",
+    "Discover and refine children's talents in various fields.",
+    "Stimulate community interaction and expand the local support network for orphan care."
+  ],
+  "statistics": {
+    "schoolsRenovated": [
+      {
+        "month": "January",
+        "count": 0
+      },
+      {
+        "month": "February",
+        "count": 1
+      },
+      {
+        "month": "March",
+        "count": 2
+      },
+      {
+        "month": "April",
+        "count": 3
+      },
+      {
+        "month": "May",
+        "count": 4
+      },
+      {
+        "month": "June",
+        "count": 6
+      },
+      {
+        "month": "July",
+        "count": 8
+      }
+    ],
+    "budgetDistribution": [
+      {
+        "name": "Structural Repairs",
+        "value": 35
+      },
+      {
+        "name": "School Equipment",
+        "value": 25
+      },
+      {
+        "name": "Sanitary Facilities",
+        "value": 15
+      },
+      {
+        "name": "Educational Aids",
+        "value": 15
+      },
+      {
+        "name": "Recreational Spaces",
+        "value": 10
+      }
+    ],
+    "impactMetrics": {
+      "enrollmentIncrease": 28,
+      "dropoutReduction": 45,
+      "academicPerformance": 32,
+      "teacherSatisfaction": 85
+    }
+  }
+}

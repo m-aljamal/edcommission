@@ -70,6 +70,17 @@ export const translations = {
       students: "Students Impacted",
       programs: "Active Programs",
     },
+    formalEducation:{
+      title: "Formal Education",
+      subTitle: `As a result of the gap in formal education, the association sponsored a group of official governmental schools.`
+    },
+    
+      notFound: {
+        "title": "Page Not Found",
+        "subtitle": "Sorry, we couldn't find the page you were looking for.",
+        "return": "Return to Homepage"
+      }
+    
   },
   ar: {
     nav: {
@@ -131,6 +142,16 @@ export const translations = {
       students: "طالب مستفيد",
       programs: "برنامج نشط",
     },
+    formalEducation:{
+      title: "التعليم الرسمي",
+      subTitle: `نتيجة الفجوة الحاصلة في التعليم الرسميّ قامت الجمعيّة برعاية مجموعة من المدارس الحكوميّة الرسميّة.`,
+      
+    },
+    notFound:{
+      title:"الصفحة غير موجودة",
+      subtitle:"عذراً، لم نتمكن من العثور على الصفحة المطلوبة.",
+      return: "العودة إلى  الصفحة الرئيسية    "
+    }
   },
 }
 
