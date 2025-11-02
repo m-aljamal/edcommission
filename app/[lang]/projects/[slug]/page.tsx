@@ -32,7 +32,7 @@ export default async function ProjectPage({
 
   return (
     <div className="min-h-screen py-12">
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Button asChild variant="ghost" className="mb-6">
             <Link href={`/${lang}/projects`}>
@@ -101,7 +101,7 @@ export default async function ProjectPage({
             </div>
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -13,7 +13,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
 
   return (
     <div className="min-h-screen py-12">
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">{t.nav.projects}</h1>
           <p className="text-lg text-gray-600 mb-12">
@@ -73,7 +73,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
             </div>
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
