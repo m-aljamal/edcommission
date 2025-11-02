@@ -1,9 +1,19 @@
+import ProjectContent from '@/components/project-content'
 import ProjectHeader from '@/components/project-header'
 import type { Project } from '@/lib/content'
 import { Locale } from '@/lib/i18n'
 import React from 'react'
 
 export default function Project({project, lang}:{project:Project, lang:Locale}) {
+
+  const tabs =   [
+    {
+      title: "نظرة عامة",
+      value: "overview"
+  }
+     
+  ]
+
   return (
     <main className="min-h-screen pt-8 pb-16">
     <div className="container mx-auto px-4">
@@ -19,7 +29,7 @@ export default function Project({project, lang}:{project:Project, lang:Locale}) 
        title={project.title}
       />
   
-    
+    <ProjectContent project={project} tabs={tabs} lang={lang} page='formal-education'/>
     </div>
 
     {/* Scroll to top button */}
@@ -32,7 +42,8 @@ export default function Project({project, lang}:{project:Project, lang:Locale}) 
       <ChevronUp className="h-5 w-5" />
     </button> */}
   </main>
-  )
+ 
+)
 }
 
 

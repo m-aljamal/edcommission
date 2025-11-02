@@ -135,3 +135,12 @@ export interface TrainingGridProps {
   trainings: Training[]
   lang: locale
 }
+
+export type ProjectType =  "formal-education" | "nonformal-education"
+
+export interface TabConfig {
+  title: string
+  value: string
+}
+
+export type TabContentRenderer = (page: ProjectType, project: Project) => ReactNode

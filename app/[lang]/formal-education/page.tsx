@@ -16,8 +16,7 @@ export default async function formalEducation({params}:{params: Promise<{lang: L
     const t = getTranslations(lang)
     const projects = await getProjects(lang)
 
-    console.log("projects",projects);
-    
+     
   return (
     <main className="min-h-screen  pt-8 bg-gray-100/50">
       <div className="container mx-auto px-4">
