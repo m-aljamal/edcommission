@@ -3,16 +3,13 @@ import { Locale } from "@/lib/i18n"
 import { BarChart3, Calendar, MapPin, Users } from "lucide-react"
 import Image from "next/image" 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
-import { tabsConent } from "./tabs-content"
-import { ProjectType } from "@/types"
+ import { ProjectType, TabConfig } from "@/types"
+import { tabsContent } from "./tabs-content"
 
 
 interface Props {
     project: Project
-     tabs: {
-        title: string;
-        value: string;
-    }[]
+     tabs: TabConfig[]
     lang:Locale
     page:ProjectType
 }
@@ -44,15 +41,19 @@ function ProjectContent({project, tabs, lang, page}:Props) {
             ))}
 
             </TabsList>
-            {
-                tabs.map((tab)=>(
-
-            <TabsContent value={tab.value} key={tab.value}>
-                {tabsConent[tab.value  ](page,project)}
-
-            </TabsContent>
-                ))
-            }
+            {tabs.map((tab) => {
+            const contentRenderer = tabsContent[tab.value]
+            
+            return (
+              <TabsContent value={tab.value} key={tab.value}>
+                {contentRenderer ? contentRenderer(page, project) : (
+                  <div className="text-center py-8 text-gray-500">
+                    المحتوى غير متوفر
+                  </div>
+                )}
+              </TabsContent>
+            )
+          })}
                 </Tabs>
 
 

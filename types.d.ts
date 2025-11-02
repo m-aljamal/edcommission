@@ -144,3 +144,45 @@ export interface TabConfig {
 }
 
 export type TabContentRenderer = (page: ProjectType, project: Project) => ReactNode
+
+export interface Project {
+  id: string
+  title: string
+  slug: string
+  description: string
+  fullDescription: string
+  importance: string
+  importanceList:string[]
+  components:{
+    title: string
+    description:string
+  }
+  image:string 
+  gallery:string[]
+  videoUrl:string 
+  location:string 
+  beneficiaries:number 
+  status:string 
+  startDate:string 
+  endDate: string 
+  budget: number 
+  partners: string[]
+  objectives:string[]
+  statistics:{
+    schoolsRenovated:{
+      month: string 
+      count: number 
+    }[]
+    budgetDistribution: {
+      name:string 
+      value:number 
+    }[]
+    impactMetrics:{
+      enrollmentIncrease:number 
+      dropoutReduction:number 
+      academicPerformance:number 
+      teacherSatisfaction:number
+    }
+  }
+ 
+}

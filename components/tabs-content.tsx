@@ -1,7 +1,7 @@
 import { Project } from "@/lib/content"
-import { ProjectType } from "@/types"
+import { ProjectType, TabContentRenderer } from "@/types"
 
- const overview = (page: ProjectType, project:Project) =>{
+ const overview:TabContentRenderer = (page, project) =>{
     if (page === "formal-education") {
         return (
             <>
@@ -35,6 +35,9 @@ import { ProjectType } from "@/types"
     }
 }
 
-export const tabsConent = {
-    overview
-}
+export const tabsContent: Record<string, TabContentRenderer> = {
+    overview,
+    
+  } as const
+
+  export type AvailableTabKey = keyof typeof tabsContent
