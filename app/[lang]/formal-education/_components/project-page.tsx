@@ -13,7 +13,15 @@ export default function Project({ project, lang }: { project: Project, lang: Loc
     {
       title: "أهمية المشروع",
       value: "importance"
-    }
+    },
+    {
+      title: "المكوّنات",
+      value: "components"
+    },
+    {
+      title: "الوسائط",
+      value: "media"
+    },
 
 
   ]

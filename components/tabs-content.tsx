@@ -1,6 +1,7 @@
 import { TabContentRenderer } from "@/types"
 import { Card, CardContent } from "./ui/card"
 import { Book, Dot } from "lucide-react"
+import ImageCarousel from "./image-carousel"
 
 const overview: TabContentRenderer = (page, project) => {
     if (page === "formal-education") {
@@ -97,10 +98,6 @@ const overview: TabContentRenderer = (page, project) => {
     )
 }
 
-
-
-
-
 const importance: TabContentRenderer = (page, project) => {
     if (page === "formal-education") {
         return (
@@ -139,11 +136,76 @@ const importance: TabContentRenderer = (page, project) => {
         </>
     )
 }
+const components: TabContentRenderer = (page, project) => {
+
+    if (page === "formal-education") {
+        return (
+            <section className="bg-white rounded-2xl shadow-md p-6 mb-8">
+                <div className="space-y-6">
+                    {project.components.map((component) => (
+                        <div className="flex items-c gap-4" key={component.title}>
+                            <div>
+                                <h3 className="text-xl font-bold text-main-blue mb-2  mt-0">
+                                    {component.title}
+                                </h3>
+                                <p className="text-gray-700">{component.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+        )
+    }
+    return (
+        <>
+            important
+        </>
+    )
+}
+const media: TabContentRenderer = (page, project) => {
+    if (page === "formal-education") {
+        return (
+            <>
+                {/* YouTube Video */}
+                {/* <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
+                  <h2 className="text-2xl font-bold text-[#203441] mb-4">فيديو المشروع</h2>
+                  <div className="relative aspect-video rounded-xl overflow-hidden">
+                    <iframe
+                      src={project.videoUrl}
+                      title={project.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0 w-full h-full"
+                    ></iframe>
+                  </div>
+                </div> */}
+
+                {/* Image Carousel */}
+                <div className="bg-white rounded-2xl shadow-md p-6">
+                    <h2 className="text-2xl font-bold text-main-blue mb-4">صور من المشروع</h2>
+                    <ImageCarousel
+                        gallery={project.gallery}
+                        title={project.title}
+                    />
+                </div>
+            </>
+
+        )
+    }
+    return (
+        <>
+            important
+        </>
+    )
+}
 
 
 export const tabsContent: Record<string, TabContentRenderer> = {
     overview,
-    importance
+    importance,
+    media,
+    components
 } as const
 
 export type AvailableTabKey = keyof typeof tabsContent
