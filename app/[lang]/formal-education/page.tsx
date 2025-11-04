@@ -23,7 +23,7 @@ export default async function formalEducation({params}:{params: Promise<{lang: L
         <div className="mb-10 p-6 shadow-xl rounded-2xl">
           <div className="relative ">
             <h1 className="text-2xl font-bold text-main-blue mb-2">{t.formalEducation.title}</h1>
-            <div className="h-1 w-30 bg-gradient-to-r from-[#476c86] to-[#203441] rounded-full mb-4"></div>
+            <div className="h-1 w-30 bg-linear-to-r from-secound-blue to-main-blue rounded-full mb-4"></div>
             <p className="text-gray-600 max-w-3xl">
         {t.formalEducation.subTitle}
             </p>

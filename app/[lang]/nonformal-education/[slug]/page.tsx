@@ -1,13 +1,34 @@
-
-
-import { Locale } from '@/lib/i18n'
+import { Locale, translations } from '@/lib/i18n'
 import { getProject } from '@/lib/content'
 import NotFound from '@/components/not-found'
-import Project from '../_components/project-page'
- 
+import ProjectHeader from '@/components/project-header'
+import ProjectContent from '@/components/project-content'
+
+
 
 export default async function Page({ params }: { params: Promise<{ slug: string, lang: Locale }> }) {
   const { slug, lang } = await params
+  const { tabs: { courses, statisticsia, media, overview }, nonformalEducation } = translations[lang]
+
+  const tabs = [
+    {
+      title: overview,
+      value: "overview"
+    },
+    {
+      title: courses,
+      value: "courses"
+    },
+    {
+      title: statisticsia,
+      value: "statisticsia"
+    },
+    {
+      title: media,
+      value: "media"
+    },
+
+  ]
 
   const project = await getProject(lang, slug)
 
@@ -19,7 +40,19 @@ export default async function Page({ params }: { params: Promise<{ slug: string,
   }
 
   return (
-    <Project project={project} lang={lang} />
+    <main className="min-h-screen pt-8 pb-16">
+      <div className="container mx-auto px-4">
+
+        <ProjectHeader
+          lang={lang}
+          backLink={{ title: nonformalEducation.title, url: "/nonformal-education" }}
+          slug={project.slug}
+          title={project.title}
+        />
+
+        <ProjectContent project={project} tabs={tabs} lang={lang} page='nonformal-education' />
+      </div>
+    </main>
 
   )
 }

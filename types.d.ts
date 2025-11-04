@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react"
+import { Locale } from "./lib/i18n"
 
 interface LinksPorps {
   name: string
@@ -145,7 +146,7 @@ export interface TabConfig {
   value: string
 }
 
-export type TabContentRenderer = (page: ProjectType, project: Project) => ReactNode
+export type TabContentRenderer = (page: ProjectType, project: Project, lang: Locale) => ReactNode
 
 type Course = {
   id: string 

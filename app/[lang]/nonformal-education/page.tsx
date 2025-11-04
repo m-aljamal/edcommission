@@ -22,10 +22,10 @@ return (
     <div className="container mx-auto px-4">
       <div className="mb-10 p-6 shadow-xl rounded-2xl">
         <div className="relative ">
-          <h1 className="text-2xl font-bold text-main-blue mb-2">{t.formalEducation.title}</h1>
-          <div className="h-1 w-30 bg-gradient-to-r from-secound-blue to-main-blue rounded-full mb-4"></div>
+          <h1 className="text-2xl font-bold text-main-blue mb-2">{t.nonformalEducation.title}</h1>
+          <div className="h-1 w-30 bg-linear-to-r from-secound-blue to-main-blue rounded-full mb-4"></div>
           <p className="text-gray-600 max-w-3xl">
-      {t.formalEducation.subTitle}
+      {t.nonformalEducation.subTitle}
           </p>
         </div>
 
@@ -42,7 +42,7 @@ return (
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
                 <Link href={`/${lang}/formal-education`} className="text-gray-600">
-                  {t.formalEducation.title}
+                  {t.nonformalEducation.title}
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>

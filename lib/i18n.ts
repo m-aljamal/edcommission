@@ -75,10 +75,26 @@ export const translations = {
       subTitle: `As a result of the gap in formal education, the association sponsored a group of official governmental schools.`
     },
     
+      nonformalEducation: {
+        title: "Non-Formal Education",
+        subTitle: "Non-formal education is a complementary path to formal education, provided within centers that target those deprived of learning opportunities or those in need of support. It contributes to individual development and enhanced integration, supporting the social fabric and family cohesion amidst crises."
+      
+    },
+    
       notFound: {
         "title": "Page Not Found",
         "subtitle": "Sorry, we couldn't find the page you were looking for.",
         "return": "Return to Homepage"
+      },
+      tabs:{
+        overview: "Overview",
+        importance: "Importance",
+        components: "Components",
+        media: "Media",
+        courses:"Courses",
+        statisticsia:"Statisticsia",
+        projectOverView: "Project Overview",
+        projectGols: "Project Goals"
       }
     
   },
@@ -151,7 +167,20 @@ export const translations = {
       title:"الصفحة غير موجودة",
       subtitle:"عذراً، لم نتمكن من العثور على الصفحة المطلوبة.",
       return: "العودة إلى  الصفحة الرئيسية    "
-    }
+    },
+    tabs:{
+      overview: "نظرة عامة",
+      importance: "أهمية المشروع",
+      components: "المكوّنات",
+      media: "الوسائط",
+      courses:"الدورات",
+      statisticsia:"الإحصائيات",
+      projectOverView: "نبذة عن المشروع"
+    },
+    nonformalEducation:{
+      title: "التعليم غير الرسمي",
+      subTitle: `التعليم غير الرسميّ مسار مكمّل للتعليم النظاميّ، يُقدَّم ضمن مراكز تستهدف المحرومين من فرص التعلّم أو المحتاجين للدعم. يسهم في تنمية الفرد وتعزيز اندماجه، ويدعم النسيج الاجتماعيّ والتماسك الأسريّ في ظل الأزمات.`
+    },
   },
 }
 

@@ -46,7 +46,7 @@ function ProjectContent({project, tabs, lang, page}:Props) {
             
             return (
               <TabsContent value={tab.value} key={tab.value}>
-                {contentRenderer ? contentRenderer(page, project) : (
+                {contentRenderer ? contentRenderer(page, project, lang) : (
                   <div className="text-center py-8 text-gray-500">
                     المحتوى غير متوفر
                   </div>
