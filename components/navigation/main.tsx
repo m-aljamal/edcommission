@@ -71,13 +71,13 @@ export default function Main({
                     >
                       <div className="flex items-center">
                         <link.icon className={cn(' hidden lg:flex size-5', link.color)} />
-                        <span className="mr-1.5 text-xs lg:text-sm">{link.name}</span>
+                        <span className="mx-1.5 text-xs lg:text-sm">{link.name}</span>
                       </div>
                     </Link>
                   )
                 })}
 
-                <NavigationMenu className="[&_div.absolute]:-left-[3rem] ">
+                <NavigationMenu className="[&_div.absolute]:-left-12 ">
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="cursor-pointer">

@@ -123,6 +123,15 @@ export const translations = {
           continuedEducation:"Continued Education",
           psychologicalWellbeing:"Psychological Wellbeing",
           images:"Photos from the Project"
+      },
+      project: {
+        location:"Location",
+        projectDetails:"Project details",
+        startDate:"Start date",
+        endDate: "End date",
+        budget:"Budget",
+        inProgress: "in-progress"
+  
       }
     
   },
@@ -238,6 +247,15 @@ export const translations = {
       title: "التعليم غير الرسمي",
       subTitle: `التعليم غير الرسميّ مسار مكمّل للتعليم النظاميّ، يُقدَّم ضمن مراكز تستهدف المحرومين من فرص التعلّم أو المحتاجين للدعم. يسهم في تنمية الفرد وتعزيز اندماجه، ويدعم النسيج الاجتماعيّ والتماسك الأسريّ في ظل الأزمات.`
     },
+    project: {
+      location:"الموقع",
+      projectDetails:"تفاصيل الموقع",
+      startDate:"تاريخ البدء",
+      endDate: "تاريخ الإنتهاء",
+      budget:"الميزانية",
+      inProgress:"قيد التنفيذ"
+
+    }
   },
 }
 
