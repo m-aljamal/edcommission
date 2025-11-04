@@ -23,11 +23,11 @@ const overview: TabContentRenderer = (page, project, lang) => {
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-md p-6">
-                    <h2 className="text-2xl font-bold text-main-blue mb-4">أهداف المشروع</h2>
+                    <h2 className="text-2xl font-bold text-main-blue mb-4">{t.tabs.projectGols}</h2>
                     <ul className="space-y-3">
                         {project.objectives.map((objective, index) => (
                             <li key={index} className="flex items-start">
-                                <div className="shrink-0 w-6 h-6 rounded-full bg-secound-blue/20 flex items-center justify-center mt-0.5 ml-3">
+                                <div className="shrink-0 w-6 h-6 rounded-full bg-secound-blue/20 flex items-center justify-center mt-0.5 mx-3">
                                     <span className="text-secound-blue font-medium text-sm">{index + 1}</span>
                                 </div>
                                 <span className="text-gray-700">{objective}</span>
@@ -42,7 +42,7 @@ const overview: TabContentRenderer = (page, project, lang) => {
     return (
         <>
             <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
-                <h2 className="text-2xl font-bold text-[#203441] mb-4">نبذة عن المشروع:</h2>
+                <h2 className="text-2xl font-bold text-main-blue mb-4">{t.tabs.projectOverView}</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                     {project.fullDescription.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-4">
@@ -53,7 +53,7 @@ const overview: TabContentRenderer = (page, project, lang) => {
             </div>
 
             <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
-                <h2 className="text-2xl font-bold text-[#203441] mb-4">أهمية المشروع:</h2>
+                <h2 className="text-2xl font-bold text-[#203441] mb-4">{t.tabs.importance}</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
 
                     {project.importanceList?.map((text, index) => (
@@ -65,7 +65,7 @@ const overview: TabContentRenderer = (page, project, lang) => {
 
                 {/* Impact Cards */}
                 <div>
-                    <h2 className="text-2xl font-bold text-[#203441] mt-8  "> مكوّنات المشروع: </h2>
+                    <h2 className="text-2xl font-bold text-[#203441] mt-8  "> {t.tabs.projectComponents} </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
                         {project.components.map((component) => (
                             <Card className="border-0 shadow-sm overflow-hidden" key={component.title}>
@@ -77,7 +77,7 @@ const overview: TabContentRenderer = (page, project, lang) => {
                                             {component.title}
                                         </h3>
                                     </div>
-                                    <p className="text-gray-600 text-sm">{component.description}</p>
+                                    <p className="text-gray-600 text-sm space-x-2">{component.description}</p>
                                 </CardContent>
                             </Card>
                         ))}
@@ -86,11 +86,11 @@ const overview: TabContentRenderer = (page, project, lang) => {
             </div>
 
             <div className="bg-white rounded-2xl shadow-md p-6">
-                <h2 className="text-2xl font-bold text-[#203441] mb-4">أهداف المشروع</h2>
+                <h2 className="text-2xl font-bold text-[#203441] mb-4"> {t.tabs.projectGols}  </h2>
                 <ul className="space-y-3">
                     {project.objectives.map((objective, index) => (
                         <li key={index} className="flex items-start">
-                            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#476c86]/20 flex items-center justify-center mt-0.5 ml-3">
+                            <div className="shrink-0 w-6 h-6 rounded-full bg-[#476c86]/20 flex items-center justify-center mt-0.5 mx-3">
                                 <span className="text-[#476c86] font-medium text-sm">{index + 1}</span>
                             </div>
                             <span className="text-gray-700">{objective}</span>
@@ -102,13 +102,12 @@ const overview: TabContentRenderer = (page, project, lang) => {
     )
 }
 
-const importance: TabContentRenderer = (page, project) => {
-
+const importance: TabContentRenderer = (page, project, lang) => {
+    const t = translations[lang]
     return (
         <>
-
             <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
-                <h2 className="text-2xl font-bold text-[#203441] mb-4">لماذا هذا المشروع؟</h2>
+                <h2 className="text-2xl font-bold text-main-blue mb-4">     {t.tabs.whyThisProject}</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                     <>
                         {project.importance?.split('\n\n').map((paragraph, index) => (
@@ -116,9 +115,6 @@ const importance: TabContentRenderer = (page, project) => {
                                 {paragraph}
                             </p>
                         ))}
-
-
-
                         {project.importanceList.map((item, index) => (
                             <section className="my-2 flex items-start" key={index}>
                                 <Dot className="size-7" />
@@ -135,20 +131,22 @@ const importance: TabContentRenderer = (page, project) => {
     )
 
 }
-const courses: TabContentRenderer = (page, project) => {
+const courses: TabContentRenderer = (page, project, lang) => {
     return (
 
         <CourseTabContent
             project={project}
+            lang={lang}
         />
 
     )
 }
-const statisticsia: TabContentRenderer = (page, project) => {
+const statisticsia: TabContentRenderer = (page, project, lang) => {
     return (
 
         <StatisticsTabContent
             project={project}
+            lang={lang}
         />
 
     )
@@ -176,8 +174,9 @@ const components: TabContentRenderer = (page, project) => {
     )
 }
 
-const media: TabContentRenderer = (page, project) => {
-    if (page === "formal-education") {
+const media: TabContentRenderer = (page, project, lang) => {
+    const t = translations[lang]
+    
         return (
             <>
                 {/* YouTube Video */}
@@ -196,7 +195,7 @@ const media: TabContentRenderer = (page, project) => {
 
                 {/* Image Carousel */}
                 <div className="bg-white rounded-2xl shadow-md p-6">
-                    <h2 className="text-2xl font-bold text-main-blue mb-4">صور من المشروع</h2>
+                    <h2 className="text-2xl font-bold text-main-blue mb-4">{t.tabs.images}</h2>
                     <ImageCarousel
                         gallery={project.gallery}
                         title={project.title}
@@ -205,12 +204,9 @@ const media: TabContentRenderer = (page, project) => {
             </>
 
         )
-    }
-    return (
-        <>
-            important
-        </>
-    )
+   
+     
+    
 }
 
 
