@@ -214,7 +214,33 @@ export interface Project {
       dropoutReduction:number 
       academicPerformance:number 
       teacherSatisfaction:number
+      skillImprovement:number 
+      communityEngagement:number 
+      employmentRate:number 
+      continuedEducation:number 
+      psychologicalWellbeing:number 
     }
+    participantsGrowth:{
+ year: string 
+ count:number
+    }[]
+    courseDistribution:{
+        name:string 
+        value:number
+    }[]
+    ageDistribution:{
+         name: string 
+         vlaue:number
+    }[]
+    genderDistribution:{
+   name: string 
+   value:number 
+    }[]
+    employmentImpact:{
+      category:string 
+      percentage:number
+    }[]
+    
   }
  
 }

@@ -19,6 +19,10 @@ export default function Project({ project, lang }: { project: Project, lang: Loc
       title: "الوسائط",
       value: "media"
     },
+    {
+      title: "إحصائيات",
+      value: "statisticsia"
+    },
 
 
   ]

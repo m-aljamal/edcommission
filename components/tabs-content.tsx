@@ -3,6 +3,7 @@ import { Card, CardContent } from "./ui/card"
 import { Book, Dot } from "lucide-react"
 import ImageCarousel from "./image-carousel"
 import CourseTabContent from "./course-tab-content"
+import StatisticsTabContent from "./statistics-tab-content"
 
 const overview: TabContentRenderer = (page, project) => {
     if (page === "formal-education") {
@@ -133,7 +134,6 @@ const importance: TabContentRenderer = (page, project) => {
 
 }
 const courses: TabContentRenderer = (page, project) => {
-
     return (
 
         <CourseTabContent
@@ -141,8 +141,17 @@ const courses: TabContentRenderer = (page, project) => {
         />
 
     )
-
 }
+const statisticsia: TabContentRenderer = (page, project) => {
+    return (
+
+        <StatisticsTabContent
+            project={project}
+        />
+
+    )
+}
+
 const components: TabContentRenderer = (page, project) => {
 
 
@@ -208,7 +217,8 @@ export const tabsContent: Record<string, TabContentRenderer> = {
     importance,
     media,
     components,
-    courses
+    courses,
+    statisticsia
 } as const
 
 export type AvailableTabKey = keyof typeof tabsContent
