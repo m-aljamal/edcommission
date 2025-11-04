@@ -1,0 +1,346 @@
+{
+    
+      "id": "dabiq-cultural-center",
+      "slug":"dabiq-cultural-center",
+      "type":"nonformal-education",
+      "title": "Dabiq Cultural Forum Project",
+      "description": "A cultural center offering diverse courses and social activities for the local community.",
+      "fullDescription": "\n    The Dabiq Cultural Forum is a community center established in Dabiq town in 2016. It provides comprehensive educational, cultural, and social services targeting all segments of society, with a special focus on students who have dropped out of school, women affected by war, and the youth category. The center operates from a rented building and two mobile halls. It serves as a vital space for compensating educational loss, building skills, and strengthening social cohesion.\n    ",
+      "importanceList": [
+        "• Since its launch, the Dabiq Cultural Forum has been a focal point for knowledge and community outreach in the town.",
+        "• Thousands of residents and displaced persons have benefited from its services.",
+        "• It has contributed to restoring the social fabric and enhancing the participation of marginalized groups.",
+        "• It has created an environment conducive to sustainable development at the local level."
+      ],
+      "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
+      "gallery": [
+         "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "location": "Syria - Aleppo Countryside - Dabiq",
+      "beneficiaries": 3500,
+      "status": "in-progress",
+      "startDate": "2016-06-01",
+      "endDate": "",
+      "budget": 0,
+      "partners": [
+        "Education for All Organization",
+        "Al-Amal Development Foundation",
+        "The Local Council"
+      ],
+      "objectives": [
+        "Provide an integrated community center concerned with culture, education, arts, and sports.",
+        "Address the effects of educational disruption and enhance alternative education opportunities.",
+        "Build the capacities of the local community in various professional and administrative fields.",
+        "Revive intellectual life and dialogue through specialized seminars and events.",
+        "Support and empower women psychologically, educationally, and professionally.",
+        "Care for children and youth, and refine their talents in a safe and stimulating environment.",
+        "Contribute to health awareness and preventative behaviors among the population."
+      ],
+      "components": [
+        {
+          "title": "Education and Rehabilitation: ",
+          "description": "Compensatory programs, computer courses, language courses, summer club, a library, and cultural and historical lectures."
+        },
+        {
+          "title": "Professional and Administrative Empowerment: ",
+          "description": "Vocational and administrative courses for youth, women, and local staff."
+        },
+        {
+          "title": "Psychological and Community Support: ",
+          "description": "Psychological support sessions, awareness campaigns, and first aid and nursing training."
+        },
+        {
+          "title": "Women's Empowerment:",
+          "description": "Literacy, nursing, community activities, and psychological support."
+        },
+        {
+          "title": "Cultural and Intellectual Activities:",
+          "description": "Holding seminars, lectures, knowledge competitions, and engagement through digital platforms."
+        },
+        {
+          "title": "Sports and Recreational Activities: ",
+          "description": "Football tournaments, races, and recreational trips."
+        },
+        {
+          "title": "Community and Religious Events: ",
+          "description": "Local participation, communal Iftars (Ramadan evening meals), and Ramadan competitions."
+        },
+        {
+          "title": "Summer Club: ",
+          "description": "An integrated program for children and adolescents that merges education with recreation."
+        }
+      ],
+      "courses": [
+        {
+          "id": "language-courses",
+          "title": "Language Courses",
+          "icon": "Languages",
+          "description": "Courses in English, Turkish, and Arabic for beginners and advanced learners",
+          "details": "These courses aim to develop participants' language skills, including reading, writing, conversation, and listening. They utilize interactive teaching methods and practical applications.",
+          "duration": "3 Months (12 Weeks)",
+          "sessions": "Twice a week (2 hours per session)",
+          "beneficiaries": 850,
+          "ageGroups": [
+            "Children (8-14 years)",
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Develop foreign language communication skills",
+            "Improve job and study opportunities",
+            "Enhance cultural communication"
+          ],
+          "outcomes": "More than 70% of participants were able to communicate fundamentally in the target language after completing the course"
+        },
+        {
+          "id": "computer-skills",
+          "title": "Computer Skills",
+          "icon": "Layers",
+          "description": "Courses in computer fundamentals, Office programs, graphic design, and website programming",
+          "details": "These courses cover a wide range of technical skills, from the basics of computer use to advanced skills in design and programming. They include practical training on the latest software and technologies.",
+          "duration": "2-4 Months (depending on level)",
+          "sessions": "3 times a week (2 hours per session)",
+          "beneficiaries": 620,
+          "ageGroups": [
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Develop essential digital skills",
+            "Master Office and design programs",
+            "Qualify youth for the digital labor market"
+          ],
+          "outcomes": "65% of graduates from the design and programming courses secured job opportunities or started their own projects"
+        },
+        {
+          "id": "art-music",
+          "title": "Arts and Music",
+          "icon": "Palette",
+          "description": "Courses in drawing, Arabic calligraphy, music, and theatre for children and youth",
+          "details": "These courses aim to discover and develop artistic talents, providing a space for creative expression. They include training in various visual and performing arts, concluding with exhibitions, plays, and musical concerts.",
+          "duration": "4 Months",
+          "sessions": "Twice a week (2 hours per session)",
+          "beneficiaries": 480,
+          "ageGroups": [
+            "Children (6-14 years)",
+            "Youth (15-25 years)"
+          ],
+          "goals": [
+            "Develop artistic and creative talents",
+            "Enhance self-confidence and self-expression",
+            "Provide a means for psychological relief and art therapy"
+          ],
+          "outcomes": "12 art exhibitions, 8 theatre performances, and 6 musical concerts produced by course participants were organized"
+        },
+        {
+          "id": "vocational-training",
+          "title": "Vocational Training",
+          "icon": "Award",
+          "description": "Courses in sewing, embroidery, hairdressing, cooking, and first aid",
+          "details": "These courses provide practical training in professions in demand in the local labor market. The focus is on practical and applied aspects, with the provision of necessary equipment and materials for training.",
+          "duration": "6 Months",
+          "sessions": "3 times a week (3 hours per session)",
+          "beneficiaries": 750,
+          "ageGroups": [
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Qualify participants for the labor market",
+            "Develop marketable vocational skills",
+            "Economically empower women"
+          ],
+          "outcomes": "55% of participants started their own projects or secured jobs after completing the courses"
+        },
+        {
+          "id": "life-skills",
+          "title": "Life Skills",
+          "icon": "Lightbulb",
+          "description": "Courses in communication skills, leadership, project management, and entrepreneurship",
+          "details": "These courses focus on developing personal, social, and leadership skills. They include practical exercises, interactive games, and group projects to enhance experiential learning.",
+          "duration": "2 Months",
+          "sessions": "Once a week (3 hours per session)",
+          "beneficiaries": 420,
+          "ageGroups": [
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Develop communication and teamwork skills",
+            "Enhance leadership and problem-solving abilities",
+            "Cultivate entrepreneurship skills"
+          ],
+          "outcomes": "15 community initiatives were launched, led by graduates of the life skills courses"
+        },
+        {
+          "id": "literacy-education",
+          "title": "Literacy and Adult Education",
+          "icon": "BookOpen",
+          "description": "Courses in reading, writing, and arithmetic for adults who did not receive formal education",
+          "details": "These courses aim to enable adults to acquire basic skills in reading, writing, and arithmetic. They use educational methodologies suitable for adults and take into account their needs and circumstances.",
+          "duration": "8 Months",
+          "sessions": "3 times a week (2 hours per session)",
+          "beneficiaries": 380,
+          "ageGroups": [
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Enable adults to read and write",
+            "Improve employment opportunities and social integration",
+            "Enhance parents' ability to follow up on their children's education"
+          ],
+          "outcomes": "85% of participants became able to read and write fundamentally after completing the course"
+        }
+      ],
+      "statistics": {
+        "participantsGrowth": [
+          {
+            "year": "2018",
+            "count": 450
+          },
+          {
+            "year": "2019",
+            "count": 820
+          },
+          {
+            "year": "2020",
+            "count": 1200
+          },
+          {
+            "year": "2021",
+            "count": 1850
+          },
+          {
+            "year": "2022",
+            "count": 2400
+          },
+          {
+            "year": "2023",
+            "count": 3100
+          },
+          {
+            "year": "2024",
+            "count": 3500
+          }
+        ],
+        "courseDistribution": [
+          {
+            "name": "Language Courses",
+            "value": 25
+          },
+          {
+            "name": "Computer Skills",
+            "value": 18
+          },
+          {
+            "name": "Arts and Music",
+            "value": 15
+          },
+          {
+            "name": "Vocational Training",
+            "value": 22
+          },
+          {
+            "name": "Life Skills",
+            "value": 12
+          },
+          {
+            "name": "Literacy Education",
+            "value": 8
+          }
+        ],
+        "ageDistribution": [
+          {
+            "name": "Children (6-14)",
+            "value": 35
+          },
+          {
+            "name": "Youth (15-25)",
+            "value": 45
+          },
+          {
+            "name": "Adults (Over 25)",
+            "value": 20
+          }
+        ],
+        "genderDistribution": [
+          {
+            "name": "Female",
+            "value": 58
+          },
+          {
+            "name": "Male",
+            "value": 42
+          }
+        ],
+        "employmentImpact": [
+          {
+            "category": "Secured Jobs",
+            "percentage": 42
+          },
+          {
+            "category": "Started Own Projects",
+            "percentage": 25
+          },
+          {
+            "category": "Continued Education",
+            "percentage": 18
+          },
+          {
+            "category": "Other",
+            "percentage": 15
+          }
+        ],
+        "impactMetrics": {
+          "skillImprovement": 85,
+          "communityEngagement": 72,
+          "employmentRate": 67,
+          "continuedEducation": 58,
+          "psychologicalWellbeing": 78
+        }
+      },
+      "communityEvents": [
+        {
+          "id": "language-courses",
+          "title": "Beekeepers' Association",
+          "icon": "Languages",
+          "description": "Association meetings to showcase the latest tools used",
+          "details": "These courses aim to develop participants' language skills, including reading, writing, conversation, and listening. They utilize interactive teaching methods and practical applications.",
+          "sessions": "Twice a week (2 hours per session)",
+          "beneficiaries": 100,
+          "ageGroups": [
+            "Children (8-14 years)",
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Develop foreign language communication skills",
+            "Improve job and study opportunities",
+            "Enhance cultural communication"
+          ],
+          "outcomes": "More than 70% of participants were able to communicate fundamentally in the target language after completing the course"
+        },
+        {
+          "id": "courses",
+          "title": "Cultural Lectures",
+          "icon": "Lightbulb",
+          "description": "Association meetings to showcase the latest tools used",
+          "details": "These courses aim to develop participants' language skills, including reading, writing, conversation, and listening. They utilize interactive teaching methods and practical applications.",
+          "sessions": "Twice a week (2 hours per session)",
+          "beneficiaries": 100,
+          "ageGroups": [
+            "Children (8-14 years)",
+            "Youth (15-25 years)",
+            "Adults (Over 25 years)"
+          ],
+          "goals": [
+            "Develop foreign language communication skills",
+            "Improve job and study opportunities",
+            "Enhance cultural communication"
+          ],
+          "outcomes": "More than 70% of participants were able to communicate fundamentally in the target language after completing the course"
+        }
+      ]
+    }
+  

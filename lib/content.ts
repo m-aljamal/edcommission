@@ -1,4 +1,4 @@
-import { Project } from "@/types"
+import { Project, ProjectType } from "@/types"
 import type { Locale } from "./i18n"
 import { promises as fs } from "fs"
 import path from "path"
@@ -56,7 +56,7 @@ export async function getBlogPost(lang: Locale, slug: string): Promise<BlogPost 
 }
 
 // Get all projects for a specific language
-export async function getProjects(lang: Locale): Promise<Project[]> {
+export async function getProjects(lang: Locale, type: ProjectType): Promise<Project[]> {
   const projectsDirectory = path.join(process.cwd(), "content", "projects", lang)
 
   try {
@@ -70,9 +70,11 @@ export async function getProjects(lang: Locale): Promise<Project[]> {
           return JSON.parse(fileContents) as Project
         }),
     )
+     
 
     // Sort by start date, newest first
-    return projects.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime())
+    const filterdProjects = projects.filter(project=>project.type === type)
+    return filterdProjects.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime())
   } catch (error) {
     console.error(`Error reading projects for ${lang}:`, error)
     return []

@@ -2,6 +2,7 @@ import { TabContentRenderer } from "@/types"
 import { Card, CardContent } from "./ui/card"
 import { Book, Dot } from "lucide-react"
 import ImageCarousel from "./image-carousel"
+import CourseTabContent from "./course-tab-content"
 
 const overview: TabContentRenderer = (page, project) => {
     if (page === "formal-education") {
@@ -99,70 +100,71 @@ const overview: TabContentRenderer = (page, project) => {
 }
 
 const importance: TabContentRenderer = (page, project) => {
-    if (page === "formal-education") {
-        return (
-            <>
 
-                <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
-                    <h2 className="text-2xl font-bold text-[#203441] mb-4">لماذا هذا المشروع؟</h2>
-                    <div className="prose prose-lg max-w-none text-gray-700">
-                        <>
-                            {project.importance.split('\n\n').map((paragraph, index) => (
-                                <p key={index} className="mb-4">
-                                    {paragraph}
-                                </p>
-                            ))}
-
-
-
-                            {project.importanceList.map((item, index) => (
-                                <section className="my-2 flex items-start" key={index}>
-                                    <Dot className="size-7" />
-                                    <p className="text-gray-700">{item}</p>
-                                </section>
-                            ))}
-                        </>
-                    </div>
-                </div>
-
-
-            </>
-
-        )
-    }
     return (
         <>
-            important
+
+            <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
+                <h2 className="text-2xl font-bold text-[#203441] mb-4">لماذا هذا المشروع؟</h2>
+                <div className="prose prose-lg max-w-none text-gray-700">
+                    <>
+                        {project.importance?.split('\n\n').map((paragraph, index) => (
+                            <p key={index} className="mb-4">
+                                {paragraph}
+                            </p>
+                        ))}
+
+
+
+                        {project.importanceList.map((item, index) => (
+                            <section className="my-2 flex items-start" key={index}>
+                                <Dot className="size-7" />
+                                <p className="text-gray-700">{item}</p>
+                            </section>
+                        ))}
+                    </>
+                </div>
+            </div>
+
+
         </>
+
     )
+
+}
+const courses: TabContentRenderer = (page, project) => {
+
+    return (
+
+        <CourseTabContent
+            project={project}
+        />
+
+    )
+
 }
 const components: TabContentRenderer = (page, project) => {
 
-    if (page === "formal-education") {
-        return (
-            <section className="bg-white rounded-2xl shadow-md p-6 mb-8">
-                <div className="space-y-6">
-                    {project.components.map((component) => (
-                        <div className="flex items-c gap-4" key={component.title}>
-                            <div>
-                                <h3 className="text-xl font-bold text-main-blue mb-2  mt-0">
-                                    {component.title}
-                                </h3>
-                                <p className="text-gray-700">{component.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
 
-        )
-    }
     return (
-        <>
-            important
-        </>
+        <section className="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <div className="space-y-6">
+                {project.components.map((component) => (
+                    <div className="flex items-c gap-4" key={component.title}>
+                        <div>
+                            <h3 className="text-xl font-bold text-main-blue mb-2  mt-0">
+                                {component.title}
+                            </h3>
+                            <p className="text-gray-700">{component.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+
     )
 }
+
 const media: TabContentRenderer = (page, project) => {
     if (page === "formal-education") {
         return (
@@ -205,7 +207,8 @@ export const tabsContent: Record<string, TabContentRenderer> = {
     overview,
     importance,
     media,
-    components
+    components,
+    courses
 } as const
 
 export type AvailableTabKey = keyof typeof tabsContent

@@ -14,7 +14,7 @@ import ProjectCard from '@/components/project-card'
 export default async function formalEducation({params}:{params: Promise<{lang: Locale}>}) {
     const {lang} = await params
     const t = getTranslations(lang)
-    const projects = await getProjects(lang)
+    const projects = await getProjects(lang, "formal-education")
 
      
   return (
@@ -22,7 +22,7 @@ export default async function formalEducation({params}:{params: Promise<{lang: L
       <div className="container mx-auto px-4">
         <div className="mb-10 p-6 shadow-xl rounded-2xl">
           <div className="relative ">
-            <h1 className="text-2xl font-bold text-[#203441] mb-2">{t.formalEducation.title}</h1>
+            <h1 className="text-2xl font-bold text-main-blue mb-2">{t.formalEducation.title}</h1>
             <div className="h-1 w-30 bg-gradient-to-r from-[#476c86] to-[#203441] rounded-full mb-4"></div>
             <p className="text-gray-600 max-w-3xl">
         {t.formalEducation.subTitle}

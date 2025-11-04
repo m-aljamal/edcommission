@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react"
+
 interface LinksPorps {
   name: string
   href: string
@@ -145,10 +147,40 @@ export interface TabConfig {
 
 export type TabContentRenderer = (page: ProjectType, project: Project) => ReactNode
 
+type Course = {
+  id: string 
+  title:string 
+  icon: LucideIcon 
+  description:string 
+  details:string 
+  duration:string 
+  sessions:string 
+  beneficiaries: number 
+  ageGroups: string[]
+  goals:string[]
+  outcomes:string 
+
+}
+type CommunityEvent = {
+  id:string 
+  title:string 
+  icon:LucideIcon
+  description:string 
+  details:string 
+  sessions:string 
+  beneficiaries:number 
+  ageGroups:string[]
+  goals:string[]
+  outcomes:string 
+
+}
 export interface Project {
   id: string
+  courses: Course[]
+  communityEvents:CommunityEvent[]
   title: string
   slug: string
+  type: ProjectType
   description: string
   fullDescription: string
   importance:   string
