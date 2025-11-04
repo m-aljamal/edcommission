@@ -22,7 +22,7 @@ export default function CourseTabContent({ project }: { project: Project }) {
             {/* Course Categories */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
                 {project.courses?.map((course) => {
-                    const IconComponent = course.icon
+                     
                     return (
                         <button
                             key={course.id}
@@ -34,7 +34,7 @@ export default function CourseTabContent({ project }: { project: Project }) {
                                 : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
                                 }`}
                         >
-                            <IconComponent
+                            <course.icon
                                 className={`h-8 w-8 mb-2 ${selectedCourse === course.id ? 'text-white' : 'text-secound-blue'}`}
                             />
                             <span className="text-sm font-medium text-center">{course.title}</span>
@@ -49,13 +49,12 @@ export default function CourseTabContent({ project }: { project: Project }) {
                     const course = project.courses.find((c) => c.id === selectedCourse)
                     if (!course) return null
 
-                    const IconComponent = course.icon
-
+ 
                     return (
                         <div className="bg-gray-50 rounded-xl p-6 mb-6 border border-gray-100">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 rounded-full bg-[#203441] flex items-center justify-center shrink-0">
-                                    <IconComponent className="h-6 w-6 text-white" />
+                                    <course.icon className="h-6 w-6 text-white" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#203441] mb-2">
@@ -171,12 +170,11 @@ export default function CourseTabContent({ project }: { project: Project }) {
                 </h3>
                 <Accordion type="single" collapsible className="w-full">
                     {project?.communityEvents?.map((course) => {
-                        const IconComponent = course.icon
-                        return (
+                         return (
                             <AccordionItem key={course.id} value={course.id}>
                                 <AccordionTrigger className="hover:no-underline">
                                     <div className="flex items-center">
-                                        <IconComponent className="w-5 h-5 text-[#476c86] ml-2" />
+                                        <course.icon className="w-5 h-5 text-[#476c86] ml-2" />
                                         <span>{course.title}</span>
                                     </div>
                                 </AccordionTrigger>
