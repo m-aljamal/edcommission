@@ -10,7 +10,6 @@ interface ActivityCardProps {
         goal: string
     }
     projectImage: string
-    projectTitle: string
     importanceLabel: string
     goalLabel: string
 }
@@ -18,7 +17,6 @@ interface ActivityCardProps {
 export function ActivityCard({
     activity,
     projectImage,
-    projectTitle,
     importanceLabel,
     goalLabel,
 }: ActivityCardProps) {
@@ -27,14 +25,14 @@ export function ActivityCard({
             <div className="relative h-48 overflow-hidden">
                 <Image
                     src={projectImage}
-                    alt={projectTitle}
+                    alt={"activity image"}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#476c86] to-[#203441]"></div>
             </div>
 
-            <div className="p-5 text-right">
+            <div className="p-5 ">
                 <h3 className="font-bold text-[#203441] mb-2 group-hover:text-[#476c86] transition-colors">
                     {activity.title}
                 </h3>
@@ -42,14 +40,14 @@ export function ActivityCard({
                     <div className="flex gap-2 items-start">
                         <CircleAlert className="size-4 text-[#203441] shrink-0" />
                         <p>
-                            <span className="ml-2 font-semibold">{importanceLabel}</span>
+                            <span className="mx-2 font-semibold">{importanceLabel}</span>
                             {activity.importance}
                         </p>
                     </div>
                     <div className="flex gap-2 items-start">
                         <Target className="size-4 text-[#203441] shrink-0" />
                         <p>
-                            <span className="ml-2 font-semibold">{goalLabel}</span>
+                            <span className="mx-2 font-semibold">{goalLabel}</span>
                             {activity.goal}
                         </p>
                     </div>

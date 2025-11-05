@@ -17,7 +17,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, readMoreText, lang }: ProjectCardProps) {
-    const { title, description, image, icon: Icon, color, slug } = project
+    const { title, description, image, icon: Icon, color, slug, } = project
 
     return (
         <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -46,7 +46,7 @@ export function ProjectCard({ project, readMoreText, lang }: ProjectCardProps) {
                 <p className="text-gray-600 mb-4">{description}</p>
 
                 <Link
-                    href={`/psychological-support/${slug}`}
+                    href={`/${lang}/psychological-support/${slug}`}
                     className="inline-flex items-center text-[#476c86] font-medium hover:text-[#203441] transition-colors"
                 >
                     <span>{readMoreText}</span>

@@ -1,10 +1,11 @@
- import { Brain, Heart, Home, School, Star, Users } from 'lucide-react'
+import { Brain, Heart, Home, School, Star, Users } from 'lucide-react'
 
 export interface Activity {
   id: string
   title: string
   importance: string
   goal: string
+  image: string
 }
 
 export interface Program {
@@ -749,3 +750,6 @@ export const psychologicalSupportData = {
     ],
   },
 }
+
+export type PsychologicalSupportData = typeof psychologicalSupportData["en"]["programs"][0]
+
