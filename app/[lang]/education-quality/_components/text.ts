@@ -1,5 +1,8 @@
 export const qualityTranslations = {
     ar: {
+     
+       
+      
       metadata: {
         title: 'برامج جودة التعليم | هيئة تطوير التعليم',
         description: 'تعرف على برامج جودة التعليم وكيف نضمن تقديم تعليم عالي الجودة في مدارسنا ومراكزنا التعليمية',
@@ -151,6 +154,7 @@ export const qualityTranslations = {
         description: 'يمكنك تحميل الدراسات والأبحاث المتعلقة ببرامج جودة التعليم والاطلاع على أحدث المعايير والممارسات.',
         downloadButton: 'تحميل الملف',
         viewAllButton: 'عرض جميع الدراسات والأبحاث',
+        viewLess:'عرض أقل'
       },
       cta: {
         title: 'انضم إلى جهودنا في تحسين جودة التعليم',
@@ -311,6 +315,7 @@ export const qualityTranslations = {
         description: 'You can download studies and research related to education quality programs and review the latest standards and practices.',
         downloadButton: 'Download File',
         viewAllButton: 'View All Studies and Research',
+        viewLess: "View less"
       },
       cta: {
         title: 'Join Our Efforts to Improve Education Quality',
