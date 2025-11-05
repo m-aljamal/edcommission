@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
- 
+import { Locale } from "@/lib/i18n";
+
 interface ProjectCardProps {
   project: {
     id: string;
@@ -10,11 +11,14 @@ interface ProjectCardProps {
     image: string;
     projectLink: string;
   };
+  readMoreText: string
+  lang: Locale
 }
+
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 
-   
+
   return (
     <Link href={project.projectLink} className="block h-full">
       <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-1 group">
