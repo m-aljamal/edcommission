@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import {   useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Calendar, MapPin, Clock, Users, Share2, ArrowLeft, Heart, FileText } from 'lucide-react'
+import { Calendar, MapPin, Clock,   Share2, ArrowLeft, Heart, FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
@@ -39,8 +39,7 @@ export default function EventDetail({ event }: { event: EventProps }) {
     registrationLink,
     conferenceDays,
     sessions,
-    contactEmail,
-    id, socialMedia,
+     
     tracks,
     venue,
     registrationOptions,
@@ -65,10 +64,7 @@ export default function EventDetail({ event }: { event: EventProps }) {
     }
   }
 
-  const filteredSessions =
-    sessions && selectedDay
-      ? sessions.filter((session) => session.day === selectedDay)
-      : sessions
+  
 
   return (
     <div className="pb-16">

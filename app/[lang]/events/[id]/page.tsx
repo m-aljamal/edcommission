@@ -1,7 +1,6 @@
 
 import { notFound } from 'next/navigation'
-import EventsList from '../_components/events-list'
-import { getEvent } from '@/lib/content'
+ import { getEvent } from '@/lib/content'
 import { Locale } from '@/lib/i18n'
 import EventDetail from '../_components/event-detail'
 
