@@ -1,0 +1,270 @@
+{
+  "id": "education-confirance-2025",
+  "title": "Conference on the Reality and Future of Pre-University Education in Syria Post-War",
+  "date": "10-08-2025 - 11-08-2025",
+  "time": "09:00 AM - 17:00 PM",
+  "location": "Syria - Aleppo City",
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079058/WhatsApp_Image_2025-05-07_at_11.08.16_AM_twfbi5.jpg",
+  "category": "confirance",
+  "shortDescription": "It aims to assess the effects of the war on education, and build a comprehensive vision for rehabilitating and developing the educational system through curriculum modernization, staff qualification, technology enhancement, and quality assurance, to achieve sustainable education that preserves national identity and keeps pace with the future.",
+  "fullDescription": {
+    "title": "Conference Goal",
+    "subTitle": "Submitting proposals for rebuilding and developing education in Syria.",
+    "list": [
+      "Evaluating and analyzing the reality of education before and during the war.",
+      "Developing strategic plans for the recovery of the educational system.",
+      "Submitting proposals for updating educational curricula and qualifying educational staff.",
+      "Enhancing the use of technology in education.",
+      "Controlling educational quality and supporting local and international partnerships.",
+      "Providing a sustainable educational environment that meets community needs and preserves national identity."
+    ]
+  },
+  "conferenceDays": [
+    {
+      "date": "10-08-2025",
+      "title": "Diagnosing the Reality and Laying the Foundations for Development",
+      "description": ""
+    },
+    {
+      "date": "11-08-2025",
+      "title": "Planning for the Future and Setting Implementation Mechanisms",
+      "description": ""
+    }
+  ],
+  "sessions": [
+    {
+      "id": "keynote-1",
+      "title": "Opening Session",
+      "day": "10-08-2025",
+      "time": "9:00 AM - 8:30 AM",
+      "speaker": "",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Welcome speech (15 minutes).\nShort documentary presentation on the impact of the war on education in Syria (15 minutes)."
+    },
+    {
+      "id": "keynote-2",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "10:30 AM - 9:00 AM",
+      "title": "The Reality of Education in Syria Before and During the War",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of statistics on student dropout rates during the war (15 minutes).\nImpact of the war on academic performance (15 minutes).\nImpact of the war on school infrastructure (15 minutes).\nInterventions and interactive discussion among attendees (45 minutes)."
+    },
+    {
+      "id": "keynote-3",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "10:45 AM - 10:30 AM",
+      "title": "Break",
+      "location": "",
+      "track": "General Sessions",
+      "description": ""
+    },
+    {
+      "id": "keynote-4",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "11:45 AM - 10:45 AM",
+      "title": "Proposals for the Administrative Reconstruction of Educational Institutions",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of successful experiences from other war-affected countries (20 minutes).\nDiscussion on how to apply these standards in the Syrian context (40 minutes)."
+    },
+    {
+      "id": "keynote-5",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "12:45 PM - 11:45 AM",
+      "title": "Developing Educational Curricula",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of modern curriculum models from developed countries (20 minutes).\nDiscussion on how to adapt these curricula to the Syrian reality (40 minutes)."
+    },
+    {
+      "id": "keynote-6",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "13:45 PM - 12:45 PM",
+      "title": "Lunch Break",
+      "location": "",
+      "track": "General Sessions",
+      "description": ""
+    },
+    {
+      "id": "keynote-7",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "14:45 PM - 13:45 PM",
+      "title": "Qualifying Educational Staff",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of successful experiences in teacher training (20 minutes).\nDiscussion on how to apply these programs in Syria (40 minutes)."
+    },
+    {
+      "id": "keynote-8",
+      "speaker": "",
+      "day": "10-08-2025",
+      "time": "15:15 PM - 14:45 PM",
+      "title": "Closing Session for Day One",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Summarizing the outcomes of the first day.\nForming working groups for the second day to draft recommendations."
+    },
+    {
+      "id": "keynote-9",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "9:30 AM - 8:30 AM",
+      "title": "Enhancing the Use of Technology in Education",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of successful experiences in using technology in education (20 minutes).\nDiscussion on how to implement these experiences in Syria (40 minutes)."
+    },
+    {
+      "id": "keynote-10",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "09:45 AM - 09:30 AM",
+      "title": "Break",
+      "location": "",
+      "track": "General Sessions",
+      "description": ""
+    },
+    {
+      "id": "keynote-11",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "10:45 AM - 9:45 AM",
+      "title": "Building a System for Quality Assurance in Educational Institutions",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of successful models for quality assurance systems in education (20 minutes).\nDiscussion on how to apply these models in Syria (40 minutes)."
+    },
+    {
+      "id": "keynote-12",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "11:00 AM - 10:45 AM",
+      "title": "Break",
+      "location": "",
+      "track": "General Sessions",
+      "description": ""
+    },
+    {
+      "id": "keynote-13",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "12:00 AM - 11:00 AM",
+      "title": "Overcoming the Effects of War",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Strategies for school restoration and reconstruction (20 minutes).\nPsychological and educational support programs for war-affected students (20 minutes).\nIntegrating displaced students and those who dropped out of education (20 minutes)."
+    },
+    {
+      "id": "keynote-14",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "13:00 PM - 12:00 PM",
+      "title": "Lunch Break",
+      "location": "",
+      "track": "General Sessions",
+      "description": ""
+    },
+    {
+      "id": "keynote-15",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "14:00 PM - 13:00 PM",
+      "title": "A Future Vision for Educational Development",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Proposals for educational development and adoption of advanced curricula (15 minutes).\nAdoption of e-learning platforms (15 minutes).\nTeacher qualification and competency enhancement programs (15 minutes).\nPartnerships with local and international universities for teacher training (15 minutes)."
+    },
+    {
+      "id": "keynote-16",
+      "speaker": "",
+      "day": "11-08-2025",
+      "time": "15:00 PM - 14:00 PM",
+      "title": "Closing Session",
+      "location": "",
+      "track": "General Sessions",
+      "description": "Presentation of final recommendations and outcomes."
+    }
+  ],
+  "tracks": [
+    {
+      "name": "",
+      "description": "Diagnosing the reality of education in Syria before and during the war"
+    },
+    {
+      "description": "Forecasting the future of education and developing recovery and development plans",
+      "name": ""
+    },
+    {
+      "description": "Submitting proposals for the administrative reconstruction of educational institutions",
+      "name": ""
+    },
+    {
+      "description": "Developing educational curricula",
+      "name": ""
+    },
+    {
+      "description": "Qualifying educational staff",
+      "name": ""
+    },
+    {
+      "description": "Enhancing the use of technology in education",
+      "name": ""
+    },
+    {
+      "description": "Building a system for quality assurance in educational institutions",
+      "name": ""
+    },
+    {
+      "description": "Strengthening partnerships with international institutions and organizations",
+      "name": ""
+    },
+    {
+      "description": "Enhancing psychological and social support for students",
+      "name": ""
+    },
+    {
+      "description": "Promoting scientific research and innovation in education",
+      "name": ""
+    }
+  ],
+  "venue": {
+    "name": "Sheraton Hotel",
+    "address": "Syria - Aleppo - Bab Al-Faraj",
+    "facilities": [
+      "Main hall accommodating 100 people",
+      "1 training halls",
+      "1 display halls",
+      "Restaurants"
+    ],
+    "map": ""
+  },
+  "registrationOptions": [
+    {
+      "name": "Registration without Accommodation",
+      "price": "$110",
+      "benefits": [],
+      "deadline": "25-07-2025"
+    },
+    {
+      "name": "Registration with Accommodation",
+      "price": "$365",
+      "benefits": [],
+      "deadline": "25-07-2025"
+    }
+  ],
+   "registrationLink": "https://forms.gle/REFwGRronzYPecWK8",
+  "contactEmail": "info@edcommission.com",
+  "socialMedia": {
+    "twitter": "#educonf2024",
+    "facebook": "educonf2024",
+    "instagram": "educonf2024"
+  }
+}

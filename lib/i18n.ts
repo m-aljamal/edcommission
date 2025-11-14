@@ -5,6 +5,7 @@ export const defaultLocale: Locale = "en"
 
 export const translations = {
   en: {
+    seeMore: "Find more",
     nav: {
       home: "Home",
       donate: "Ways to Donate",
@@ -254,8 +255,8 @@ export const translations = {
       endDate: "تاريخ الإنتهاء",
       budget:"الميزانية",
       inProgress:"قيد التنفيذ"
-
-    }
+    },
+    seeMore: "عرض التفاصيل"
   },
 }
 

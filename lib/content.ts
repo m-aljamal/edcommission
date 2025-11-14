@@ -2,6 +2,7 @@ import { Project, ProjectType } from "@/types"
 import type { Locale } from "./i18n"
 import { promises as fs } from "fs"
 import path from "path"
+import { EventProps } from "@/app/[lang]/events/_components/text"
 
 export interface BlogPost {
   id: string
@@ -90,6 +91,45 @@ export async function getProject(lang: Locale, slug: string): Promise<Project | 
     return JSON.parse(fileContents) as Project
   } catch (error) {
     console.error(`Error reading project ${slug} for ${lang}:`, error)
+    return null
+  }
+}
+
+
+// get events 
+
+export async function getEvents(lang: Locale): Promise<EventProps[]> {
+  const eventsDirectory = path.join(process.cwd(), "content", "events", lang)
+
+  try {
+    const fileNames = await fs.readdir(eventsDirectory)
+    const events = await Promise.all(
+      fileNames
+        .filter((fileName) => fileName.endsWith(".json"))
+        .map(async (fileName) => {
+          const filePath = path.join(eventsDirectory, fileName)
+          const fileContents = await fs.readFile(filePath, "utf8")
+          return JSON.parse(fileContents) as EventProps
+        }),
+    )
+
+    // Sort by date, newest first
+    return events.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  } catch (error) {
+    console.error(`Error reading events for ${lang}:`, error)
+    return []
+  }
+}
+
+
+export async function getEvent(lang: Locale, id: string): Promise<EventProps | null> {
+  const filePath = path.join(process.cwd(), "content", "events", lang, `${id}.json`)
+
+  try {
+    const fileContents = await fs.readFile(filePath, "utf8")
+    return JSON.parse(fileContents) as EventProps
+  } catch (error) {
+    console.error(`Error reading event ${id} for ${lang}:`, error)
     return null
   }
 }
