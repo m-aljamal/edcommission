@@ -1,6 +1,25 @@
 import { LucideIcon } from "lucide-react"
 import { Locale } from "./lib/i18n"
 
+
+export type Event = {
+  slug: string;
+  title: string;
+  shortDescription: string
+  date: string;
+  coverImage: string;
+  excerpt: string;
+  ogImage: {
+    url: string;
+  };
+  content: string;
+  preview?: boolean;
+ time: string
+  location: string
+  shortDescription: string
+cover: string
+};
+
 interface LinksPorps {
   name: string
   href: string
@@ -9,35 +28,7 @@ interface LinksPorps {
   bg: string
 }
 
-export interface Event {
-  id: string
-  title: string
-  date: string
-  time: string
-  location: string
-  image: string
-  category: 'course' | 'workshop' | 'project' | 'confirance'
-  shortDescription: string
-  fullDescription: string
-  agenda?: AgendaItem[]
-  phases?: Phase[]
-  availableSeats?: number
-  registrationLink?: string
-  donationLink?: string
-  volunteerLink?: string
-  speakers?: Speaker[]
-  coordinator?: Coordinator
-  eligibility?: string[]
-  applicationDeadline?: string
-  applicationLink?: string
 
-  conferenceDays?: any
-  sessions?: any
-  tracks?: any
-  venue?: any
-  registrationOptions?: any
-  sponsors?: any
-}
 
 export interface EventCardProps {
   event: Event
