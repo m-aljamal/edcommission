@@ -4,6 +4,7 @@ import { Locale } from "./lib/i18n"
 
 export type Event = {
   slug: string;
+  contactEmail?:string
   title: string;
   shortDescription: string
   date: string;
@@ -12,6 +13,7 @@ export type Event = {
   ogImage: {
     url: string;
   };
+  registrationLink?:string
   content: string;
   preview?: boolean;
  time: string

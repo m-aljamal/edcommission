@@ -1,75 +1,3 @@
-// import markdownToHtml from "@/components/markdownToHtml"
-// import { PostBody } from "@/components/post-body"
-// import { getAllEvents, getEventBySlug } from "@/lib/api"
-// import { Locale } from "@/lib/i18n"
-// import { Metadata } from "next"
-// import { notFound } from "next/navigation"
-
-// interface Params  {
-//   params: Promise<{
-//     slug:string 
-//     lang: Locale
-//   }>
-// }
-
-
-
-
-// export default async function Event({params}:Params){
-// const {lang,slug}  = await params
-//   const event =  getEventBySlug(slug,lang)
-//   if(!event){
-//     return notFound()
-//   }
-
-//     const content = await markdownToHtml(event.content || "");
-
-//   return(
-//     <article>
-//         <h2>{event.time}</h2>
-//         <h2>{event.title}</h2>
-//         <h2>{event.shortDescription}</h2>
-//         <PostBody
-//         content={content}
-//         />
-//     </article>
-//   )
-// }
-
-
-
-
-// export async function generateMetadata(props: Params): Promise<Metadata> {
-//   const {lang,slug} = await props.params;
-//   const event = getEventBySlug(slug, lang);
-
-//   if (!event) {
-//     return notFound();
-//   }
-
-//   const title = `${event.title} | EDC Post`;
-
-//   return {
-//     title,
-//     openGraph: {
-//       title,
-//       images: [event.ogImage?.url],
-//     },
-//   };
-// }
-
-// export async function generateStaticParams() {
-
-//   const events = getAllEvents("en");
-//   return events.map((event) => ({
-//     slug: event.slug,
-//   }));
-// }
-
-
-
-
-
 import markdownToHtml from "@/components/markdownToHtml";
 import { PostBody } from "@/components/post-body";
 import { getAllEvents, getEventBySlug } from "@/lib/api";
@@ -77,7 +5,12 @@ import { Locale } from "@/lib/i18n";
 import { Metadata } from "next";
 import { notFound } from 'next/navigation';
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock } from 'lucide-react';
+import Image from "next/image";
+import { ArrowLeft, Calendar, Clock, MapPin, Share2, Heart, FileText } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import EventDetail from "../../events/_components/event-detail";
 
 interface Params {
   params: Promise<{
@@ -109,118 +42,156 @@ export default async function Event({ params }: Params) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
-      {/* Back Navigation */}
-      <div className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 py-4">
-          <Link
-            href={`/${lang}/blog`}
-            className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            {isArabic ? "العودة للمقالات" : "Back to Articles"}
-          </Link>
-        </div>
-      </div>
+    // <div className="pb-16">
+    //   <div className="relative">
+    //     {/* Main Image */}
+    //     <div className="relative min-h-[600px] md:h-[450px] lg:h-[550px]">
+    //       {event.cover && (
+    //         <Image
+    //           src={event.cover || '/placeholder.svg'}
+    //           alt={event.title}
+    //           fill
+    //           className="object-cover"
+    //           priority
+    //         />
+    //       )}
+    //       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 
-      {/* Header Section */}
-      <article className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
-        {/* Meta Information */}
-        <div className="flex flex-col gap-3 mb-8">
-          <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-              <time>{formatDate(event.date)}</time>
-            </div>
-            {event.time && (
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                <span>{event.time}</span>
-              </div>
-            )}
-          </div>
-        </div>
+    //       {/* Decorative elements */}
+    //       <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-[#39576f]/20 blur-3xl"></div>
+    //       <div className="absolute bottom-1/3 right-1/4 w-40 h-40 rounded-full bg-[#203441]/20 blur-3xl"></div>
+    //     </div>
 
-        {/* Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-slate-900 dark:text-white mb-6 leading-tight text-balance">
-          {event.title}
-        </h1>
+    //     {/* Back Button */}
+    //     <div className="absolute top-6 right-6 z-10">
+    //       <Link href={`/${lang}/blog`}>
+    //         <Button
+    //           variant="outline"
+    //           className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/20 rounded-full group"
+    //         >
+    //           {isArabic ? (
+    //             <>
+    //               <span>{isArabic ? "العودة للمقالات" : "Back to Articles"}</span>
+    //               <ArrowLeft className="ml-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
+    //             </>
+    //           ) : (
+    //             <>
+    //               <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
+    //               <span>{isArabic ? "العودة للمقالات" : "Back to Articles"}</span>
+    //             </>
+    //           )}
+    //         </Button>
+    //       </Link>
+    //     </div>
 
-        {/* Short Description */}
-        {event.shortDescription && (
-          <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-12 pb-12 border-b border-slate-200 dark:border-slate-800">
-            {event.shortDescription}
-          </p>
-        )}
+    //     {/* Article Title and Basic Info */}
+    //     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+    //       <div className="container mx-auto">
+    //         <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+    //           {event.title}
+    //         </h1>
 
-        {/* Featured Image */}
-        {event.cover && (
-          <div className="mb-16 rounded-xl overflow-hidden shadow-xl">
-            <img
-              src={event.cover || "/placeholder.svg"}
-              alt={event.title}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        )}
+    //         <div className="flex flex-wrap gap-6 text-white/90">
+    //           <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+    //             <Calendar className="h-5 w-5 text-white/80" />
+    //             <span>{formatDate(event.date)}</span>
+    //           </div>
 
-        {/* Content */}
-        <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
-          <PostBody content={content} />
-        </div>
+    //           {event.time && (
+    //             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+    //               <Clock className="h-5 w-5 text-white/80" />
+    //               <span>{event.time}</span>
+    //             </div>
+    //           )}
 
-        {/* Event Details Card */}
-        {event.time && (
-          <div className="bg-white dark:bg-slate-900 rounded-xl p-8 border border-slate-200 dark:border-slate-800 mb-12">
-            <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white mb-6">
-              {isArabic ? "تفاصيل الفعالية" : "Event Details"}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">
-                  {isArabic ? "التاريخ والوقت" : "Date & Time"}
-                </h3>
-                <p className="text-lg text-slate-900 dark:text-white font-medium">
-                  {formatDate(event.date)}
-                </p>
-                {event.time && (
-                  <p className="text-slate-600 dark:text-slate-400">
-                    {event.time}
-                  </p>
-                )}
-              </div>
-              {event.location && (
-                <div>
-                  <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">
-                    {isArabic ? "المكان" : "Location"}
-                  </h3>
-                  <p className="text-lg text-slate-900 dark:text-white font-medium">
-                    {event.location}
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-      </article>
+    //           {event.location && (
+    //             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+    //               <MapPin className="h-5 w-5 text-white/80" />
+    //               <span>{event.location}</span>
+    //             </div>
+    //           )}
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
 
-      {/* Related Articles Section */}
-      <section className="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif font-bold text-slate-900 dark:text-white mb-4">
-              {isArabic ? "مقالات أخرى" : "More Articles"}
-            </h2>
-            <Link
-              href={`/${lang}/blog`}
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors"
-            >
-              {isArabic ? "اعرض جميع المقالات" : "View All Articles"}
-            </Link>
-          </div>
-        </div>
-      </section>
-    </main>
+    //   <div className="container mx-auto px-4 py-10">
+    //     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    //       {/* Left Column - Main Content */}
+    //       <div className="lg:col-span-2">
+    //         {/* Short Description */}
+    //         {event.shortDescription && (
+    //           <div className="mb-8 pb-8 border-b border-gray-200">
+    //             <p className="text-xl text-gray-700 leading-relaxed">
+    //               {event.shortDescription}
+    //             </p>
+    //           </div>
+    //         )}
+
+    //         {/* Main Content */}
+    //         <div className="prose prose-lg max-w-none space-y-4">
+    //           <PostBody content={content} />
+    //         </div>
+    //       </div>
+
+    //       {/* Right Column - Action Card */}
+    //       <div>
+    //         <div className="sticky top-24">
+    //           <Card className="overflow-hidden">
+    //             <div className="h-2 bg-gradient-to-r from-[#203441] to-[#39576f]"></div>
+    //             <CardContent className="p-6">
+    //               <h3 className="text-xl font-bold text-[#203441] mb-4">
+    //                 {isArabic ? "معلومات المقالة" : "Article Info"}
+    //               </h3>
+
+    //               <div className="space-y-4">
+    //                 <Button
+    //                   variant="outline"
+    //                   className="w-full text-[#476c86] hover:text-[#476c86] hover:bg-[#476c86]/10 group" 
+    //                 >
+    //                   <Share2 className="mx-2 h-4 w-4" />
+    //                   {isArabic ? "مشاركة" : "Share"}
+    //                 </Button>
+    //               </div>
+
+    //               {/* Metadata */}
+    //               <Separator className="my-6" />
+    //               <div dir={isArabic ? "rtl" : "ltr"}>
+    //                 <h4 className="font-medium text-[#203441] mb-4">
+    //                   {isArabic ? "التفاصيل" : "Details"}
+    //                 </h4>
+    //                 <div className="space-y-3 text-sm">
+    //                   <div>
+    //                     <p className="text-gray-500 mb-1">{isArabic ? "التاريخ" : "Date"}</p>
+    //                     <p className="font-medium text-[#203441]">{formatDate(event.date)}</p>
+    //                   </div>
+    //                   {event.time && (
+    //                     <div>
+    //                       <p className="text-gray-500 mb-1">{isArabic ? "الوقت" : "Time"}</p>
+    //                       <p className="font-medium text-[#203441]">{event.time}</p>
+    //                     </div>
+    //                   )}
+    //                   {event.location && (
+    //                     <div>
+    //                       <p className="text-gray-500 mb-1">{isArabic ? "المكان" : "Location"}</p>
+    //                       <p className="font-medium text-[#203441]">{event.location}</p>
+    //                     </div>
+    //                   )}
+    //                 </div>
+    //               </div>
+    //             </CardContent>
+    //           </Card>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+
+
+    <EventDetail
+    event={event}
+    />
   );
 }
 

@@ -12,6 +12,8 @@ shortDescription: "Comprehensive conference addressing education system recovery
 
 ## Overview
 
+![Educational Recovery Meeting](https://res.cloudinary.com/dokawmydv/image/upload/v1762079030/education-panel_discussion_k3zx9m.jpg)
+
 The Pre-University Education Conference brings together educational experts, policymakers, and stakeholders to assess the impact of the war on Syria's education system and develop comprehensive strategies for recovery and modernization. This two-day summit focuses on rebuilding a resilient, forward-thinking education system that honors national identity while embracing contemporary best practices.
 
 ## Conference Objectives
@@ -30,6 +32,8 @@ The conference aims to achieve the following strategic objectives:
 - **International Partnerships**: Foster collaborations with global educational institutions and organizations
 
 ## Key Topics
+
+![Modern Classroom Technology](https://res.cloudinary.com/dokawmydv/image/upload/v1762079030/modern_classroom_setup_qwert7.jpg)
 
 ### Day One: Diagnostic and Foundation Building
 **October 8, 2025**
@@ -75,6 +79,8 @@ This day focuses on assessing current conditions and establishing the groundwork
 ### Day Two: Future Planning and Implementation
 **October 9, 2025**
 
+![Digital Learning Solutions](https://res.cloudinary.com/dokawmydv/image/upload/v1762079030/tech_education_integration_yumop3.jpg)
+
 This day concentrates on forward-looking strategies and actionable implementation frameworks:
 
 #### Morning Sessions
@@ -109,6 +115,8 @@ This day concentrates on forward-looking strategies and actionable implementatio
 - Call to action for stakeholders
 
 ## Expected Outcomes
+
+![Conference Networking](https://res.cloudinary.com/dokawmydv/image/upload/v1762079030/conference_networking_session_abcd12.jpg)
 
 ### Key Deliverables
 
