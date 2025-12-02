@@ -22,11 +22,8 @@ export default function EventDetail({ event }: { event: Event }) {
     cover,
     shortDescription,
     content,
-    coverImage,
-    excerpt, slug,
-contactEmail,    
+    contactEmail,
     registrationLink
-
   } = event
 
   const handleShare = () => {
@@ -94,18 +91,20 @@ contactEmail,
                 <Calendar className="h-5 w-5 text-white/80" />
                 <span>{date}</span>
               </div>
+              {time &&
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <Clock className="h-5 w-5 text-white/80" />
+                  <span>{time}</span>
+                </div>
+              }
+              {
+                location &&
 
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Clock className="h-5 w-5 text-white/80" />
-                <span>{time}</span>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <MapPin className="h-5 w-5 text-white/80" />
-                <span>{location}</span>
-              </div>
-
-
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <MapPin className="h-5 w-5 text-white/80" />
+                  <span>{location}</span>
+                </div>
+              }
             </div>
           </div>
         </div>
@@ -117,13 +116,12 @@ contactEmail,
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Left Column - Main Content */}
           <div className="lg:col-span-2">
-            <div className="w-full justify-start mb-32 sm:mb-8 bg-gray-100  grid grid-cols-1 sm:flex ">
-              <div className="prose prose-lg max-w-none space-y-4"  >
-                <h2 className='text-2xl font-bold text-[#203441] mb-4'>{shortDescription}</h2>
-                <div className="prose prose-lg max-w-none space-y-4">
+            <div className="w-full justify-start mb-32 sm:mb-8   grid grid-cols-1 sm:flex ">
+              <div className="prose prose-lg max-w-none space-y-8"  >
+                <h2 className='text-xl text-[#203441] mb-10'>{shortDescription}</h2>
+                <div  >
                   <PostBody content={content} />
                 </div>
-
               </div>
             </div>
 
@@ -136,7 +134,7 @@ contactEmail,
                 <div className="h-2 bg-gradient-to-r from-[#203441] to-[#39576f]"></div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-[#203441] mb-4"  >
-                   سجل في الفعالية
+                    سجل في الفعالية
                   </h3>
 
                   <div className="space-y-4">
@@ -144,21 +142,11 @@ contactEmail,
                     {registrationLink && (
                       <Button className="w-full bg-[#39576f] hover:bg-[#203441]" asChild>
                         <Link href={registrationLink}>
-                       التسجيل في الفعالية
+                          التسجيل في الفعالية
                         </Link>
                       </Button>
                     )}
 
-                    {/* Application Button */}
-
-
-                    {/* Donation Button */}
-
-
-                    {/* Volunteer Button */}
-
-
-                  
 
                     {/* Share Button */}
                     <Button variant="outline" className="w-full" onClick={handleShare}>
@@ -178,10 +166,7 @@ contactEmail,
                     </Button>
                   </div>
 
-                  {/* Coordinator Info */}
 
-
-                  {/* Conference Contact Info */}
                   {contactEmail && (
                     <>
                       <Separator className="my-6" />
@@ -192,7 +177,7 @@ contactEmail,
                           +90 531 507 45 47
                         </p>
 
-                       
+
                       </div>
                     </>
                   )}
