@@ -24,17 +24,34 @@ shortDescription: "شهد المؤتمر جلسات مكثفة انتهت بوض
 
 فيما يلي أسماء المتحدثين وروابط أوراقهم العلمية المقدمة خلال المؤتمر:
 
+
 ---
 
-### د. عائشة عهد حوري
-**عنوان الورقة:** تطوير المناهج التعليمية في ضوء البحوث العلمية في مرحلة ما قبل التعليم الجامعي  
-[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1x3PSgI5ugDQX2gb5-5nm4IV2Ph9eStUI/view?usp=sharing)
+### آمنة الشطي
+**عنوان الورقة:** تطوير برامج إعداد المشرفين التربويين في مناطق سوريا: تصور مقترح في ضوء الاتجاهات العالمية الحديثة  
+[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1e0ktWZRHEVsZKbOevnUd7bc4FzhSSzTK/view?usp=sharing)
+
 
 ---
 
 ### د. هبة عدنان حجي هلال
 **عنوان الورقة:** توظيف تقنيات التعليم في التعليم العام ما قبل الجامعي في سوريا  
 [تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1i_VmAi6csQP3XwPt4fklABAtU4DxfCfs/view?usp=sharing)
+
+
+---
+
+### أسماء الأخرس
+**عنوان الورقة:** تعزيز التعليم في سوريا – إطار استراتيجي لإصلاح التعليم بعد التعافي  
+[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1qvy0_tyZpBrNlgVKZxxflEWqhFZpAtSQ/view?usp=sharing)
+
+---
+
+
+### د. عائشة عهد حوري
+**عنوان الورقة:** تطوير المناهج التعليمية في ضوء البحوث العلمية في مرحلة ما قبل التعليم الجامعي  
+[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1x3PSgI5ugDQX2gb5-5nm4IV2Ph9eStUI/view?usp=sharing)
+
 
 ---
 
@@ -47,18 +64,6 @@ shortDescription: "شهد المؤتمر جلسات مكثفة انتهت بوض
 ### د. رامه صبحي عاصي
 **عنوان الورقة:** نموذج مقترح للنهوض بالتعليم ما قبل الجامعي في سوريا  
 [تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1xVow1W8i750DZ51Hyx9vcaG6Fmdme1Cq/view?usp=sharing)
-
----
-
-### أسماء الأخرس
-**عنوان الورقة:** تعزيز التعليم في سوريا – إطار استراتيجي لإصلاح التعليم بعد التعافي  
-[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1qvy0_tyZpBrNlgVKZxxflEWqhFZpAtSQ/view?usp=sharing)
-
----
-
-### آمنة الشطي
-**عنوان الورقة:** تطوير برامج إعداد المشرفين التربويين في مناطق سوريا: تصور مقترح في ضوء الاتجاهات العالمية الحديثة  
-[تحميل الورقة العلمية (PDF)](https://drive.google.com/file/d/1e0ktWZRHEVsZKbOevnUd7bc4FzhSSzTK/view?usp=sharing)
 
 ---
 
