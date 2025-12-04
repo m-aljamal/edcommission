@@ -3,6 +3,7 @@ import { Noto_Kufi_Arabic } from 'next/font/google'
 import '../globals.css'
 import Header from '@/components/navigation/header'
 import { Locale } from '@/lib/i18n'
+import Footer from '@/components/navigation/footer'
 
  type Params = { lang:  Locale}
 
@@ -37,7 +38,7 @@ export default async function RootLayout({
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-1">{children}</main>
-            {/* <Footer /> */}
+            <Footer />
           </div>
          
       </body>

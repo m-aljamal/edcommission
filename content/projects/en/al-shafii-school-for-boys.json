@@ -38,10 +38,13 @@
       "description": "Providing free transportation for orphaned children, securing school supplies, providing clothing and heating, and conducting periodic maintenance of facilities to ensure the sustainability of the school environment."
     }
   ],
-  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg",
-  "gallery": [
-    "https://res.cloudinary.com/dokawmydv/image/upload/v1762079023/7_fzqlc7.jpg"
-  ],
+  "image": "https://res.cloudinary.com/dokawmydv/image/upload/v1762079001/3_t1fr6m.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dokawmydv/image/upload/v1762079025/84844_gauf6d.jpg",
+      "https://res.cloudinary.com/dokawmydv/image/upload/v1762079047/Untitled1_b0unmx.jpg",
+      "https://res.cloudinary.com/dokawmydv/image/upload/v1764839573/502578207_1317227246949976_7858246798083983432_n_lezrgl.jpg"
+       
+    ],
   "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "location": "Syria - Aleppo Countryside - Atarib",
   "beneficiaries": 700,

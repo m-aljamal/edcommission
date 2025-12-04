@@ -62,7 +62,7 @@ export default function Header() {
     },
     {
       name: t.nav.events,
-      href: `/${lang}/events`,
+      href: `/${lang}/blog`,
       icon: Users,
       color: "text-violet-700",
       bg: "bg-violet-700",

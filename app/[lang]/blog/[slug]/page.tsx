@@ -34,6 +34,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     return notFound();
   }
 
+
   const title = `${event.title}`;
 
   return {

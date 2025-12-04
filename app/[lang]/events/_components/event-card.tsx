@@ -69,7 +69,7 @@ export default function EventCard({ event, lang }: { event: Event, lang: Locale 
 
         {/* Action Button */}
         <div className="mt-auto pt-4">
-          <Link href={`/${lang}/events/${slug}`}>
+          <Link href={`/${lang}/blog/${slug}`}>
             <Button className="w-full bg-linear-to-r from-main to-first-blue hover:from-first-blue hover:to-main group border-0 cursor-pointer">
               <span>{t.seeMore}</span>
               {
