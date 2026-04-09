@@ -3,40 +3,60 @@ import { StatisticCard } from './statistic-card'
 import { useEffect, useState } from 'react'
 import { ButtonIcon } from '../button-icon'
 import { VideoDialog } from './video-dialog'
+import { Locale } from '@/lib/i18n'
 
 const text = {
-  title: 'جمعية تطوير التعليم',
-  subTitle: 'تمكين - إكتشاف - إبتكار',
+  ar:{
+
+    title: 'جمعية تطوير التعليم',
+    subTitle: 'تمكين - إكتشاف - إبتكار',
+  },
+  en:{
+     title: 'Education Development Association',
+    subTitle: 'Empowerment - Discovery - Innovation',
+  }
 }
 
 const statistics = [
   {
-    title: 'طالب',
+    title: {
+      ar: 'طالب',
+      en: 'Student',
+    },
     number: 50000,
     icon: GraduationCap,
     color: 'from-first-blue to-main-blue',
   },
   {
-    title: ' كفالات تعليمية ',
+    title:{
+      ar:  'كفالات تعليمية ',
+      en: 'Educational Sponsorships'
+    } ,
     number: 750,
     icon: BookOpen,
     color: 'from-secound-blue to-main-blue',
   },
   {
-    title: 'مدارس',
+    title: {
+      ar: 'مدارس',
+      en: "Schools"
+    },
     number: 25,
     icon: School,
     color: 'from-main-gray to-first-blue',
   },
   {
-    title: 'مراكز ثقافية',
+    title: {
+      ar: 'مراكز ثقافية',
+      en: 'Cultural Centers'
+    } ,
     number: 6,
     icon: Building,
     color: 'from-secound-blue to-main-gray',
   },
 ]
 
-export default function HeroContent() {
+export default function HeroContent({lang}:{lang:Locale}) {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -48,15 +68,15 @@ export default function HeroContent() {
       <div className="max-w-4xl space-y-14">
         {/* title */}
         <div>
-          <h1 className="text-xl font-bold tracking-tight text-white md:text-4xl ">{text.title}</h1>
-          <p className="text-sm text-white/80 md:text-2xl">{text.subTitle}</p>
+          <h1 className="text-xl font-bold tracking-tight text-white md:text-4xl ">{text[lang].title}</h1>
+          <p className="text-sm text-white/80 md:text-2xl">{text[lang].subTitle}</p>
         </div>
         {/* cards  */}
         <div className="mx-auto hidden lg:grid  grid-cols-4  gap-6">
           {statistics.map((item, index) => (
             <StatisticCard
               key={index}
-              title={item.title}
+              title={item.title[lang]}
               number={item.number}
               Icon={item.icon}
               color={item.color}
@@ -68,39 +88,55 @@ export default function HeroContent() {
         {/* cards on mobile */}
         <div className="flex  justify-center gap-5 lg:hidden">
           {statistics.map((item, index) => (
-            <div key={item.title} className="text-white flex gap-6">
+            <div key={item.title[lang]} className="text-white flex gap-6">
               {index > 0 && <div className="w-[1px] h-12 bg-white/40 rounded-2xl" />}
               <div>
-                <h2>{item.title}</h2>
+                <h2>{item.title[lang]}</h2>
                 <p>{item.number}</p>
               </div>
             </div>
           ))}
         </div>
-        <Buttons />
+        <Buttons lang={lang} />
       </div>
     </div>
   )
 }
 
-function Buttons() {
+function Buttons({lang}:{lang:Locale }) {
+  const text = {
+
+    ar: {
+      contact:  "تواصل معنا",
+      findMore: " اكتشف المزيد",
+      seeVideo: "شاهد الفيديو"
+    },
+    en: {contact:"Contact us",
+      findMore: "See more",
+      seeVideo: "Watch video"
+
+
+     },
+
+  }
   return (
     <div className=" flex flex-col lg:flex-row  items-center justify-center gap-8  ">
       <ButtonIcon
         className="bg-white text-main-blue hover:bg-white/90 shadow-lg"
         icon={MessageCircle}
-        href="/contact"
+        href={`${lang}/contact`}
       >
-        تواصل معنا
+         {text[lang].contact}
       </ButtonIcon>
       <ButtonIcon
         className="bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm border border-white/10"
         icon={Search}
-        href="/about"
+         href={`${lang}/about`}
+        
       >
-        اكتشف المزيد
+       {text[lang].findMore}
       </ButtonIcon>
-      <VideoDialog videoId="cm4ek8bGF8Y" />
+      <VideoDialog videoId="cm4ek8bGF8Y"  text={text[lang].seeVideo}/>
     </div>
   )
 }

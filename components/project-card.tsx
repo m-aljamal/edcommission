@@ -11,7 +11,6 @@ interface ProjectCardProps {
     image: string;
     projectLink: string;
   };
-  readMoreText: string
   lang: Locale
 }
 

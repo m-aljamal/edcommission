@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { ButtonIcon } from './button-icon'
-function ShortAbout() {
+import { Locale } from '@/lib/i18n'
+function ShortAbout({lang}:{lang:Locale}) {
   return (
     <section className="py-16 bg-gray-200">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <ShortAboutDescription />
+          <ShortAboutDescription lang={lang} />
 
           <ShortAboutVideo />
         </div>
@@ -17,17 +18,30 @@ function ShortAbout() {
 
 export default ShortAbout
 
-function ShortAboutDescription() {
+function ShortAboutDescription({lang}: {lang: Locale}) {
+  const text = {
+    ar:{
+      title: "هيئة تطوير التعليم",
+      subtitle: `هي منظمة رائدة تهدف إلى تحسين جودة التعليم وتوفير فرص تعليمية متميزة للطلاب في جميع أنحاء
+          المنطقة. نعمل على تطوير المناهج الدراسية وتدريب المعلمين وتوفير البنية التحتية اللازمة
+          للمدارس والمراكز التعليمية.`,
+          button : "التقارير السنوية"
+    },
+    en:{
+      title: "Education Development Commission",
+      subtitle: "We are a leading organization dedicated to improving the quality of education and providing excellent educational opportunities for students throughout the region. We work on developing curricula, training teachers, and providing the necessary infrastructure for schools and educational centers."
+    ,
+    button: "Annual Reports"
+    }
+  }
   return (
     <div className="flex flex-col items-start space-y-6">
       <Image src={`/logo.png`} alt="هيئة تطوير التعليم" width={115} height={115} priority />
 
       <div className="space-y-4 text-right mt-1.5">
         <p className="text-gray-700 leading-relaxed text-justify">
-          <span className="font-bold text-main-blue mx-2">هيئة تطوير التعليم</span>
-          هي منظمة رائدة تهدف إلى تحسين جودة التعليم وتوفير فرص تعليمية متميزة للطلاب في جميع أنحاء
-          المنطقة. نعمل على تطوير المناهج الدراسية وتدريب المعلمين وتوفير البنية التحتية اللازمة
-          للمدارس والمراكز التعليمية.
+          <span className="font-bold text-main-blue mx-2">{text[lang].title}</span>
+         {text[lang].subtitle}
         </p>
       </div>
 
@@ -35,9 +49,9 @@ function ShortAboutDescription() {
         className="bg-first-blue text-white hover:bg-main-blue shadow-md transition-all group cursor-pointer"
         icon={ArrowRight}
         iconClassName="transition-transform group-hover:translate-x-1"
-        href="/about/annual-reports"
+        href={`${lang}/about/annual-reports`}
       >
-        التقارير السنوية
+       {text[lang].button}
       </ButtonIcon>
     </div>
   )

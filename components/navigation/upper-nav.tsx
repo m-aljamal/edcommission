@@ -27,7 +27,7 @@ function UpperNav({ upperLinks }: { upperLinks: UpperLinksProps[] }) {
 
   return (
     <div className="bg-sky-700 py-1 hidden md:flex">
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between items-center px-10">
         <NavigationMenu>
           <NavigationMenuList>
             {upperLinks.map((link) => (

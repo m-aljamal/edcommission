@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import { Play } from 'lucide-react'
 import { useState } from 'react'
 
-export function VideoDialog({ videoId }: { videoId: string }) {
+export function VideoDialog({ videoId, text }: { videoId: string, text: string }) {
   const [videoOpen, setVideoOpen] = useState(false)
 
   return (
@@ -16,7 +16,7 @@ export function VideoDialog({ videoId }: { videoId: string }) {
           <Play className="size-4 lg:size-5 fill-white" />
           <span className="absolute inset-0 animate-ping opacity-30 rounded-full bg-white/50 group-hover:opacity-50"></span>
         </div>
-        <span className="text-[10px] lg:text-sm">شاهد الفيديو</span>
+        <span className="text-[10px] lg:text-sm">{text} </span>
       </button>
       <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
         <DialogTitle></DialogTitle>
