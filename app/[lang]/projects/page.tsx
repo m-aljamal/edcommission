@@ -9,7 +9,6 @@ import Image from "next/image"
 export default async function ProjectsPage({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params
   const t = getTranslations(lang)
-  const projects = await getProjects(lang)
 
   return (
     <div className="min-h-screen py-12">
