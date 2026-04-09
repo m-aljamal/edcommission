@@ -14,9 +14,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       <Hero lang={lang}/>
 
       <ShortAbout lang={lang}/>
-      {/* <CampaignCarousel /> */}
 
-      <ProjectsSection />
+      <ProjectsSection lang={lang} />
       <AchievementsInfographic />
       <ContactNewsletter />
     </div>

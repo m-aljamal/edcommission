@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react'
 
 import ProjectCard from './project-card'
 import { ButtonIcon } from '../button-icon'
-// Sample project data
+import { Locale } from '@/lib/i18n'
 
 const projects = [
   {
@@ -28,14 +28,24 @@ const projects = [
   },
 ]
 
-export default function ProjectsSection() {
+export default function ProjectsSection({lang}:{lang: Locale}) {
+  const textContent =  {
+    ar:{
+      title: "مشاريعنا التعليمية",
+      subtitle: "نعمل على تطوير البنية التحتية التعليمية وتحسين جودة التعليم"
+    },
+    en:{
+title: "Our Educational Projects",
+subtitle: "We work on developing educational infrastructure and improving the quality of education"
+    }
+  }
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-main-blue">مشاريعنا التعليمية</h2>
+          <h2 className="text-3xl font-bold text-main-blue">{textContent[lang].title}</h2>
           <p className="text-gray-600 mt-2">
-            نعمل على تطوير البنية التحتية التعليمية وتحسين جودة التعليم
+           {textContent[lang].subtitle}
           </p>
         </div>
 
