@@ -70,13 +70,13 @@ export default function Header() {
   ]
 
   const dropDownLinks = [
-    {
-      name: t.nav.campaigns,
-      href: `/${lang}/campaigns`,
-      icon: Library,
-      color: "text-cyan-600",
-      bg: "bg-cyan-600",
-    },
+    // {
+    //   name: t.nav.campaigns,
+    //   href: `/${lang}/campaigns`,
+    //   icon: Library,
+    //   color: "text-cyan-600",
+    //   bg: "bg-cyan-600",
+    // },
     {
       name: t.nav.orphanSponsorship,
       href: `/${lang}/orphans`,
