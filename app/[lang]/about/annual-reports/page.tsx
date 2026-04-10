@@ -1,3 +1,4 @@
+import { Locale } from "@/lib/i18n"
 import AnnualReportsClientPage from "./AnnualReportsClientPage"
 
  
@@ -6,6 +7,8 @@ export const metadata = {
   description: "استعرض التقارير السنوية لجمعية تطوير التعليم واطلع على الأداء المالي والإنجازات",
 }
 
-export default function AnnualReportsPage() {
-  return <AnnualReportsClientPage />
-}
+export default async function AnnualReportsPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+   
+  return <AnnualReportsClientPage lang={lang} />
+  }
