@@ -22,6 +22,7 @@ export default async function Event({ params }: Params) {
   return (
     <EventDetail
       event={event}
+      lang={lang}
     />
   );
 }

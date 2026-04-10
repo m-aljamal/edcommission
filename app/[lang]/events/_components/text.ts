@@ -1,12 +1,12 @@
 export const eventsText = {
-    ar:{
-        title:"الفعاليات والدورات",
-        description:`استكشف أحدث الفعاليات والدورات والمشاريع التي تعمل عليها جمعية تطوير التعليم، وكن جزءاً من مستقبل التعليم`
-    },
-    en:{
-title:"",
-description:""
-    }
+  ar: {
+    title: "الفعاليات والدورات",
+    description: `استكشف أحدث الفعاليات والدورات والمشاريع التي تعمل عليها جمعية تطوير التعليم، وكن جزءاً من مستقبل التعليم`
+  },
+  en: {
+    title: "Events and Courses",
+    description: `Explore the latest events, courses, and projects led by the Education Development Association, and be part of the future of education.`
+  }
 }
 
 // For items inside 'sessions' array
