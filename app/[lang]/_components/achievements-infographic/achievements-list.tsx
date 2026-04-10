@@ -7,11 +7,15 @@ import { useState } from 'react'
 import Image from 'next/image'
 import AchievementsChart from './achievements-chart'
 import { i1, i2, i3, i4 } from '@/lib/constant'
-const achievements = [
+import { Locale } from '@/lib/i18n'
+
+function AchievementsList({lang}:{lang:Locale}) {
+  const [activeChart, setActiveChart] = useState(0)
+  const achievements = [
   {
     icon: GraduationCap,
     title: '50,000+',
-    description: 'طالب مستفيد',
+    description: lang === 'ar' ? 'طالب مستفيد' : 'Beneficiary Student',
     color: 'bg-[#203441]',
     shadowColor: 'shadow-[#203441]/20',
     chartColor: '#203441',
@@ -20,7 +24,7 @@ const achievements = [
   {
     icon: Building,
     title: '25+',
-    description: 'مدرسة تم تطويرها',
+    description: lang === 'ar' ? 'مدرسة تم تطويرها' : 'Developed School',
     color: 'bg-[#39576f]',
     shadowColor: 'shadow-[#39576f]/20',
     chartColor: '#39576f',
@@ -29,7 +33,7 @@ const achievements = [
   {
     icon: BookOpen,
     title: '35+',
-    description: 'برنامج تعليمي',
+    description: lang === 'ar' ? 'برنامج تعليمي' : 'Educational Program',
     color: 'bg-[#476c86]',
     shadowColor: 'shadow-[#476c86]/20',
     chartColor: '#476c86',
@@ -46,12 +50,10 @@ const achievements = [
   },
 ]
 
-function AchievementsList() {
-  const [activeChart, setActiveChart] = useState(0)
 
   return (
     <div className="mb-24">
-      <SectionTitle title="أبرز الإنجازات" />
+      <SectionTitle title={lang === 'ar' ? "أبرز الإنجازات" : "Key Achievements"} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
         {achievements.map((item, index) => (
@@ -104,7 +106,7 @@ function AchievementsList() {
           </div>
         ))}
       </div>
-      <AchievementsChart activeChart={activeChart} setActiveChart={setActiveChart} />
+      <AchievementsChart activeChart={activeChart} setActiveChart={setActiveChart} lang={lang} />
     </div>
   )
 }

@@ -9,37 +9,39 @@ import {
 import SectionTitle from "./section-title";
 import Image from "next/image";
 import { i1, i2, i3, i4 } from "@/lib/constant";
-const benefits = [
+import { Locale } from "@/lib/i18n";
+
+function AchievementsProjectBenefits({lang}:{lang:Locale}) {
+  const benefits = [
   {
-    title: "تحسين جودة التعليم",
+    title: lang === 'ar' ? "تحسين جودة التعليم" : "Improving Education Quality",
     description:
-      "رفع مستوى التعليم من خلال تطوير المناهج وأساليب التدريس الحديثة",
+      lang === 'ar' ? "رفع مستوى التعليم من خلال تطوير المناهج وأساليب التدريس الحديثة" : "Raising the level of education through curriculum development and modern teaching methods",
     icon: LineChart,
     image: i1,
   },
   {
-    title: "بناء قدرات المعلمين",
-    description: "تدريب وتأهيل المعلمين لمواكبة أحدث الأساليب التربوية",
+    title: lang === 'ar' ? "بناء قدرات المعلمين" : "Building Teachers' Capacities",
+    description: lang === 'ar' ? "تدريب وتأهيل المعلمين لمواكبة أحدث الأساليب التربوية" : "Training and qualifying teachers to keep up with the latest educational methods",
     icon: Users,
     image: i2,
   },
   {
-    title: "تعزيز المهارات الحياتية",
-    description: "تنمية مهارات الطلاب في التفكير النقدي وحل المشكلات",
+    title: lang === 'ar' ? "تعزيز المهارات الحياتية" : "Enhancing Life Skills",
+    description: lang === 'ar' ? "تنمية مهارات الطلاب في التفكير النقدي وحل المشكلات" : "Developing students' skills in critical thinking and problem-solving",
     icon: CheckCircle,
     image:i3,
   },
   {
-    title: "تحقيق رؤية التنمية",
-    description: "المساهمة في تحقيق أهداف التنمية المستدامة في مجال التعليم",
+    title: lang === 'ar' ? "تحقيق رؤية التنمية" : "Achieving Development Vision",
+    description: lang === 'ar' ? "المساهمة في تحقيق أهداف التنمية المستدامة في مجال التعليم" : "Contributing to achieving the goals of sustainable development in the field of education",
     icon: Target,
     image: i4,
   },
 ];
-function AchievementsProjectBenefits() {
   return (
     <div>
-      <SectionTitle title="فوائد مشاريعنا" />
+      <SectionTitle title={lang === 'ar' ? "فوائد مشاريعنا" : "Benefits of Our Projects"} />
 
       <div className="grid md:grid-cols-2 gap-8">
         {benefits.map((benefit, index) => (
@@ -72,11 +74,7 @@ function AchievementsProjectBenefits() {
               <p className="text-white/90 text-lg">{benefit.description}</p>
             </div>
 
-            {/* Hover indicator */}
-            <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white/70 flex items-center text-sm">
-              <span className="mr-1">المزيد</span>
-              <ChevronRight className="w-4 h-4" />
-            </div>
+             
           </div>
         ))}
       </div>

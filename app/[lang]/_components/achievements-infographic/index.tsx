@@ -449,7 +449,8 @@ import AchievementsHeader from "./achievements-header";
 import AchievementsList from "./achievements-list";
 import AchievementsProjectBenefits from "./achievements-project-benefits";
 import { i1 } from "@/lib/constant";
- export default function AchievementsInfographic() {
+import { Locale } from "@/lib/i18n";
+ export default function AchievementsInfographic({lang}:{lang:Locale}) {
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -469,11 +470,11 @@ import { i1 } from "@/lib/constant";
       <div className="absolute bottom-40 right-10 w-80 h-80 rounded-full bg-secound-blue/30 blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <AchievementsHeader />
+        <AchievementsHeader lang={lang}/>
 
-        <AchievementsList />
+        <AchievementsList lang={lang} />
 
-        <AchievementsProjectBenefits />
+        <AchievementsProjectBenefits lang={lang}/>
       </div>
     </section>
   );

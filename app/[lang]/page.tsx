@@ -15,9 +15,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
 
       <ShortAbout lang={lang}/>
 
-      <ProjectsSection lang={lang} />
-      <AchievementsInfographic />
-      <ContactNewsletter />
+      <ProjectsSection lang={lang}/>
+      <AchievementsInfographic lang={lang} />
+      <ContactNewsletter lang={lang} />
     </div>
   )
 }
