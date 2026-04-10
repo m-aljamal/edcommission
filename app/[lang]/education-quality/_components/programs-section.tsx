@@ -12,14 +12,11 @@ import {
     UserCheck,
     LucideIcon,
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Locale } from '@/lib/i18n'
 import { qualityTranslations } from './text'
 import Image from 'next/image'
-
-
 import { CheckCircle } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 
@@ -40,7 +37,6 @@ export function CheckListItem({ text }: CheckListItemProps) {
     )
 }
 
-
 interface ProgramImageProps {
     imageUrl: string
     alt: string
@@ -50,18 +46,20 @@ interface ProgramImageProps {
 
 export function ProgramImage({ imageUrl, alt, badge, caption }: ProgramImageProps) {
     return (
-        <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+        <div className="relative h-52 md:h-80 rounded-xl overflow-hidden shadow-lg">
             <Image src={imageUrl} alt={alt} fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-                <Badge className="bg-white/20 text-white backdrop-blur-sm mb-2">{badge}</Badge>
-                <h4 className="text-white text-xl font-bold">{caption}</h4>
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                {badge && (
+                    <Badge className="bg-white/20 text-white backdrop-blur-sm mb-2">{badge}</Badge>
+                )}
+                {caption && (
+                    <h4 className="text-white text-base md:text-xl font-bold">{caption}</h4>
+                )}
             </div>
         </div>
     )
 }
-
-
 
 export function ProgramsSection({ lang }: { lang: Locale }) {
     const t = qualityTranslations[lang]
@@ -75,66 +73,78 @@ export function ProgramsSection({ lang }: { lang: Locale }) {
                     <p className="text-gray-600 max-w-3xl mx-auto">{t.programs.description}</p>
                 </div>
 
-                <Tabs defaultValue="training" className="w-full" dir={lang === "ar" ? "rtl" : "ltr"} >
-                    <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
+                <Tabs defaultValue="training" className="w-full" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+                    {/* 
+                        Mobile fix: 
+                        - Use a scrollable flex row so all 5 tabs stay on one line
+                        - Each trigger shows icon + short label stacked vertically
+                        - flex-1 makes them share available width evenly
+                        - overflow-x-auto allows horizontal scroll if screen is very narrow
+                    */}
+                    <TabsList className="flex w-full overflow-x-auto h-auto p-1 gap-1 mb-8 bg-gray-100 rounded-lg">
                         <TabsTrigger
                             value="training"
-                            className="data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
+                            className="flex flex-col items-center gap-1 flex-1 min-w-0 py-2 px-1
+                                text-[11px] leading-tight whitespace-nowrap
+                                data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
                         >
-                            <GraduationCap className="h-5 w-5 mr-2 hidden md:inline" />
-                            {t.programs.tabs.training}
+                            <GraduationCap className="h-4 w-4 shrink-0" />
+                            <span className="truncate w-full text-center">{t.programs.tabs.training}</span>
                         </TabsTrigger>
                         <TabsTrigger
                             value="supervision"
-                            className="data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
+                            className="flex flex-col items-center gap-1 flex-1 min-w-0 py-2 px-1
+                                text-[11px] leading-tight whitespace-nowrap
+                                data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
                         >
-                            <ClipboardCheck className="h-5 w-5 mr-2 hidden md:inline" />
-                            {t.programs.tabs.supervision}
+                            <ClipboardCheck className="h-4 w-4 shrink-0" />
+                            <span className="truncate w-full text-center">{t.programs.tabs.supervision}</span>
                         </TabsTrigger>
                         <TabsTrigger
                             value="testing"
-                            className="data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
+                            className="flex flex-col items-center gap-1 flex-1 min-w-0 py-2 px-1
+                                text-[11px] leading-tight whitespace-nowrap
+                                data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
                         >
-                            <LineChart className="h-5 w-5 mr-2 hidden md:inline" />
-                            {t.programs.tabs.testing}
+                            <LineChart className="h-4 w-4 shrink-0" />
+                            <span className="truncate w-full text-center">{t.programs.tabs.testing}</span>
                         </TabsTrigger>
                         <TabsTrigger
                             value="competitions"
-                            className="data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
+                            className="flex flex-col items-center gap-1 flex-1 min-w-0 py-2 px-1
+                                text-[11px] leading-tight whitespace-nowrap
+                                data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
                         >
-                            <Award className="h-5 w-5 mr-2 hidden md:inline" />
-                            {t.programs.tabs.competitions}
+                            <Award className="h-4 w-4 shrink-0" />
+                            <span className="truncate w-full text-center">{t.programs.tabs.competitions}</span>
                         </TabsTrigger>
                         <TabsTrigger
                             value="environment"
-                            className="data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
+                            className="flex flex-col items-center gap-1 flex-1 min-w-0 py-2 px-1
+                                text-[11px] leading-tight whitespace-nowrap
+                                data-[state=active]:bg-[#39576f] data-[state=active]:text-white"
                         >
-                            <School className="h-5 w-5 mr-2 hidden md:inline" />
-                            {t.programs.tabs.environment}
+                            <School className="h-4 w-4 shrink-0" />
+                            <span className="truncate w-full text-center">{t.programs.tabs.environment}</span>
                         </TabsTrigger>
                     </TabsList>
 
-                    {/* Training Tab */}
                     <TabsContent value="training" className="space-y-6">
                         <TrainingTab lang={lang} />
                     </TabsContent>
 
-                    {/* Supervision Tab */}
                     <TabsContent value="supervision" className="space-y-6">
                         <SupervisionTab lang={lang} />
                     </TabsContent>
 
-                    {/* Testing Tab */}
                     <TabsContent value="testing" className="space-y-6">
                         <TestingTab lang={lang} />
                     </TabsContent>
 
-                    {/* Competitions Tab */}
                     <TabsContent value="competitions" className="space-y-6">
                         <CompetitionsTab lang={lang} />
                     </TabsContent>
 
-                    {/* Environment Tab */}
                     <TabsContent value="environment" className="space-y-6">
                         <EnvironmentTab lang={lang} />
                     </TabsContent>
@@ -144,12 +154,10 @@ export function ProgramsSection({ lang }: { lang: Locale }) {
     )
 }
 
-
-
 function TrainingTab({ lang }: { lang: Locale }) {
     const t = qualityTranslations[lang]
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
                 <h3 className="text-2xl font-bold text-[#203441] mb-4">{t.training.title}</h3>
                 <p className="text-gray-700 mb-6">{t.training.description}</p>
@@ -172,7 +180,8 @@ function TrainingTab({ lang }: { lang: Locale }) {
 function SupervisionTab({ lang }: { lang: Locale }) {
     const t = qualityTranslations[lang]
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+            {/* Image comes second on mobile (order-2), first on desktop (md:order-1) */}
             <div className="order-2 md:order-1">
                 <ProgramImage
                     imageUrl="https://res.cloudinary.com/dokawmydv/image/upload/v1762079030/d16f98b9-0be2-4476-9889-19744be21e3a_fvlq4g.jpg"
@@ -184,10 +193,10 @@ function SupervisionTab({ lang }: { lang: Locale }) {
             <div className="order-1 md:order-2">
                 <h3 className="text-2xl font-bold text-[#203441] mb-4">{t.supervision.title}</h3>
                 <p className="text-gray-700 mb-6">{t.supervision.description}</p>
-                <div className="space-y-6">
+                <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                        <h4 className="font-bold text-[#203441] mb-2 flex items-center">
-                            <UserCheck className="h-5 w-5 ml-2 text-[#39576f]" />
+                        <h4 className="font-bold text-[#203441] mb-2 flex items-center gap-2">
+                            <UserCheck className="h-5 w-5 text-[#39576f] shrink-0" />
                             {t.supervision.team.title}
                         </h4>
                         <ul className="space-y-2 text-gray-700">
@@ -200,8 +209,8 @@ function SupervisionTab({ lang }: { lang: Locale }) {
                         </ul>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                        <h4 className="font-bold text-[#203441] mb-2 flex items-center">
-                            <ClipboardCheck className="h-5 w-5 ml-2 text-[#39576f]" />
+                        <h4 className="font-bold text-[#203441] mb-2 flex items-center gap-2">
+                            <ClipboardCheck className="h-5 w-5 text-[#39576f] shrink-0" />
                             {t.supervision.mechanisms.title}
                         </h4>
                         <ul className="space-y-2 text-gray-700">
@@ -222,13 +231,13 @@ function SupervisionTab({ lang }: { lang: Locale }) {
 function TestingTab({ lang }: { lang: Locale }) {
     const t = qualityTranslations[lang]
     return (
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-2xl font-bold text-[#203441] mb-6">{t.testing.title}</h3>
+        <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 className="text-2xl font-bold text-[#203441] mb-4">{t.testing.title}</h3>
             <p className="text-gray-700 mb-6">{t.testing.description}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-4">
-                    <h4 className="font-bold text-[#203441] mb-2 flex items-center">
-                        <LineChart className="h-5 w-5 ml-2 text-[#39576f]" />
+                    <h4 className="font-bold text-[#203441] mb-2 flex items-center gap-2">
+                        <LineChart className="h-5 w-5 text-[#39576f] shrink-0" />
                         {t.testing.goalsTitle}
                     </h4>
                     <div className="space-y-3">
@@ -248,8 +257,6 @@ function TestingTab({ lang }: { lang: Locale }) {
     )
 }
 
-
-
 interface CompetitionCardProps {
     icon: LucideIcon
     title: string
@@ -261,7 +268,7 @@ export function CompetitionCard({ icon: Icon, title, description }: CompetitionC
         <Card className="bg-[#39576f]/5 border-0">
             <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                    <div className="bg-[#39576f]/20 p-2 rounded-full">
+                    <div className="bg-[#39576f]/20 p-2 rounded-full shrink-0">
                         <Icon className="h-5 w-5 text-[#39576f]" />
                     </div>
                     <h4 className="font-bold text-[#203441]">{title}</h4>
@@ -272,17 +279,16 @@ export function CompetitionCard({ icon: Icon, title, description }: CompetitionC
     )
 }
 
-
-
 function CompetitionsTab({ lang }: { lang: Locale }) {
     const competitionIcons = [BookOpen, FileText, Award, Users]
     const t = qualityTranslations[lang]
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
                 <h3 className="text-2xl font-bold text-[#203441] mb-4">{t.competitions.title}</h3>
                 <p className="text-gray-700 mb-6">{t.competitions.description}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* 2 columns on all screen sizes — cards are small enough */}
+                <div className="grid grid-cols-2 gap-3">
                     {t.competitions.types.map((type, index) => (
                         <CompetitionCard
                             key={index}
@@ -306,7 +312,8 @@ function CompetitionsTab({ lang }: { lang: Locale }) {
 function EnvironmentTab({ lang }: { lang: Locale }) {
     const t = qualityTranslations[lang]
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+            {/* Image second on mobile, first on desktop */}
             <div className="order-2 md:order-1">
                 <ProgramImage
                     imageUrl="https://res.cloudinary.com/dokawmydv/image/upload/v1762079058/WhatsApp_Image_2025-04-23_at_2.51.42_PM_gsuzr7.jpg"
@@ -324,8 +331,8 @@ function EnvironmentTab({ lang }: { lang: Locale }) {
                     ))}
                 </div>
                 <div className="mt-6 p-4 bg-[#39576f]/5 rounded-lg">
-                    <h4 className="font-bold text-[#203441] mb-3 flex items-center">
-                        <Shield className="h-5 w-5 ml-2 text-[#39576f]" />
+                    <h4 className="font-bold text-[#203441] mb-3 flex items-center gap-2">
+                        <Shield className="h-5 w-5 text-[#39576f] shrink-0" />
                         {t.environment.standardsTitle}
                     </h4>
                     <div className="grid grid-cols-2 gap-3">
@@ -340,4 +347,3 @@ function EnvironmentTab({ lang }: { lang: Locale }) {
         </div>
     )
 }
-

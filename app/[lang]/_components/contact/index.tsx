@@ -184,7 +184,7 @@ export default function ContactNewsletter({ lang }: { lang: Locale }) {
   ] as const
 
   return (
-    <section className="py-16 bg-white" dir={isArabic ? 'rtl' : 'ltr'}>
+    <section id="contact-us" className="py-16 bg-white" dir={isArabic ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">

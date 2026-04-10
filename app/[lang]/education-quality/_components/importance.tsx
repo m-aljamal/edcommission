@@ -59,10 +59,12 @@ export function ImportanceSection({ t, stats }: ImportanceSectionProps) {
             </div>
             <div className="mt-10 text-center">
               <p className="text-gray-600 max-w-2xl mx-auto">{t.closingText}</p>
+              <a  href="#programs">
               <Button className="mt-6 bg-[#39576f] hover:bg-[#203441]">
                 {t.learnMoreButton}
                 <ArrowRight className="mr-2 h-5 w-5" />
               </Button>
+              </a>
             </div>
           </div>
         </div>

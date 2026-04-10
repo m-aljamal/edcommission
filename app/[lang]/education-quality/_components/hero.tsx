@@ -50,7 +50,7 @@ export function HeroSection({ t }: HeroSectionProps) {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="bg-transparent text-white border-white hover:bg-white/10"
+                                className="bg-white text-main-blue hover:bg-white/90"
                             >
                                 {t.downloadButton}
                                 <Download className="mr-2 h-5 w-5" />

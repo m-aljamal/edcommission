@@ -12,7 +12,7 @@ export function CTASection({ lang }: { lang: Locale }) {
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">{t.cta.title}</h2>
                 <p className="text-white/80 max-w-3xl mx-auto mb-8">{t.cta.description}</p>
                 <div className="flex flex-wrap justify-center gap-4">
-                    <Link href="/contact">
+                    <Link href={`/${lang}#contact-us`}>
                         <Button size="lg" className="bg-white text-[#203441] hover:bg-white/90">
                             {t.cta.contactButton}
                         </Button>
@@ -20,10 +20,10 @@ export function CTASection({ lang }: { lang: Locale }) {
                     <Button
                         size="lg"
                         variant="outline"
-                        className="bg-transparent text-white border-white hover:bg-white/10"
+                        className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white"
                         asChild
                     >
-                        <Link href="/donate">{t.cta.donateButton}</Link>
+                        <Link href={`/${lang}/donate`}>{t.cta.donateButton}</Link>
                     </Button>
                 </div>
             </div>

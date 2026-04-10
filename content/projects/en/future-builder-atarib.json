@@ -2,13 +2,13 @@
   "id": "future-builder-atarib",
   "type": "nonformal-education",
   "slug": "future-builder-atarib",
-  "title": "مشروع مركز بُناة الغد للتدريب والتطوير المجتمعيّ",
-  "description": "مركز يقدم دورات وأنشطة اجتماعية متنوعة للمجتمع المحلي.",
-  "fullDescription": "أُطلق مركز بُناة الغد مطلع عام 2024 في مدينة الأتارب بريف حلب الغربيّ، كمبادرة مجتمعيّة تهدف إلى تقديم خدمات التعليم غير الرسميّ والتأهيل المجتمعيّ للفئات المتضرّرة من الحرب، وخاصة طلاب المدارس والأيتام. يعمل المركز على توفير بيئة آمنة ومحفّزة للتعلّم والتفاعل، من خلال برامج تدريبيّة تربويّة وتقنية ونفسيّة متنوّعة، تُنفَّذ على مدار العام بالتعاون مع مدرّبين متخصّصين.",
+  "title": "Future Builders Center for Training and Community Development Project",
+  "description": "A center that provides various training courses and social activities for the local community.",
+  "fullDescription": "The Future Builders Center was launched in early 2024 in the city of Atarib in the western countryside of Aleppo as a community initiative aimed at providing non-formal education and community rehabilitation services for war-affected groups, especially school students and orphans. The center provides a safe and stimulating environment for learning and interaction through diverse educational, technical, and psychological training programs implemented throughout the year in collaboration with specialized trainers.",
   "importanceList": [
-    "• ساهم المشروع في سدّ الفجوات التعليميّة والتقنيّة لدى الفئات المستهدفة.",
-    "• شكّل منصّة تنمويّة مجتمعية، عززت التماسك المحلّي.",
-    "• ساهم المشروع في خلق فرص جديدة للتعلّم والنمو الشخصي."
+    "The project helped bridge educational and technological gaps among the target groups.",
+    "It served as a community development platform that strengthened local cohesion.",
+    "The project created new opportunities for learning and personal growth."
   ],
   "image": "https://drive.google.com/uc?id=1HNsN_OEUfdevNYuORNYzc5tnT7UV8ANy",
   "gallery": [
@@ -16,223 +16,131 @@
     "https://drive.google.com/uc?id=1xfOIDZ9YKgGA3FML2pQ5YSkWB_1AMt45"
   ],
   "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  "location": "سوريا - ريف حلب - الأتارب",
+  "location": "Syria - Aleppo Countryside - Atarib",
   "beneficiaries": 250,
   "status": "in-progress",
   "startDate": "2024-02-01",
   "endDate": "",
   "budget": 0,
   "partners": [
-    "منظمة التعليم للجميع",
-    "مؤسسة الأمل للتنمية",
-    "المجلس المحلي"
+    "Education for All Organization",
+    "Hope Development Foundation",
+    "Local Council"
   ],
   "objectives": [
-    "تعزيز فرص التعليم البديل والدعم الأكاديميّ للأيتام والفئات الضعيفة.",
-    "تطوير المهارات التكنولوجيّة والمجتمعية لليافعين والشباب.",
-    "تمكين الكوادر التربويّة من خلال دورات رفع الكفاءة.",
-    "دعم الأيتام نفسيًّا وتعليميًّا في بيئة راعية وآمنة.",
-    "نشر الثقافة والتوعية من خلال الفعاليّات العامّة والأنشطة الذكيّة."
+    "Enhancing alternative education opportunities and academic support for orphans and vulnerable groups.",
+    "Developing technological and social skills for adolescents and youth.",
+    "Empowering educational staff through capacity-building training programs.",
+    "Providing psychological and educational support for orphans in a safe and nurturing environment.",
+    "Promoting awareness and culture through public events and smart activities."
   ],
   "components": [
     {
-      "title": "التعليم والتأهيل الأكاديميّ:",
-      "description": "دعم طلاب المدارس، خاصة الأيتام، عبر برامج تقوية وخطط تعليمية فردية."
+      "title": "Academic Education and Support:",
+      "description": "Supporting school students, especially orphans, through remedial programs and individualized learning plans."
     },
     {
-      "title": "التأهيل التقنيّ والرقميّ:",
-      "description": "دورات منتظمة حسب المستويات في الحاسوب والبرمجة."
+      "title": "Technical and Digital Training:",
+      "description": "Regular courses in computer skills and programming based on different levels."
     },
     {
-      "title": "التطوير التربويّ:",
-      "description": "تنظيم دورات لرفع كفاءة المعلّمين والكوادر الإداريّة في المدارس."
+      "title": "Educational Development:",
+      "description": "Organizing training programs to improve the capacity of teachers and administrative staff."
     },
     {
-      "title": "الدعم النفسيّ:",
-      "description": "جلسات دعم نفسيّ، أنشطة ترفيهيّة، وألعاب ذكاء تفاعليّة."
+      "title": "Psychological Support:",
+      "description": "Psychological support sessions, recreational activities, and interactive intelligence games."
     },
     {
-      "title": "الأنشطة الثقافية والفكرية:",
-      "description": "ندوات ولقاءات مفتوحة في قضايا تربويّة وفكريّة متجدّدة."
+      "title": "Cultural and Intellectual Activities:",
+      "description": "Seminars and open discussions on educational and intellectual topics."
     }
   ],
   "courses": [
     {
       "id": "language-courses",
-      "title": "دورات اللغات",
+      "title": "Language Courses",
       "icon": "Languages",
-      "description": "دورات في اللغة الإنجليزية والتركية والعربية للمبتدئين والمتقدمين",
-      "details": "تهدف هذه الدورات إلى تطوير مهارات اللغة لدى المشاركين، بما في ذلك القراءة والكتابة والمحادثة والاستماع. تستخدم أساليب تعليمية تفاعلية وتطبيقات عملية.",
-      "duration": "3 أشهر (12 أسبوع)",
-      "sessions": "مرتان أسبوعياً (ساعتان للجلسة)",
+      "description": "Courses in English, Turkish, and Arabic for beginners and advanced learners",
+      "details": "These courses aim to develop participants’ language skills including reading, writing, speaking, and listening through interactive methods and practical applications.",
+      "duration": "3 months (12 weeks)",
+      "sessions": "Twice a week (2 hours per session)",
       "beneficiaries": 850,
-      "ageGroups": ["الأطفال (8-14 سنة)", "الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
+      "ageGroups": ["Children (8-14)", "Youth (15-25)", "Adults (25+)"],
       "goals": [
-        "تطوير مهارات التواصل باللغات الأجنبية",
-        "تحسين فرص العمل والدراسة",
-        "تعزيز التواصل الثقافي"
+        "Develop communication skills in foreign languages",
+        "Improve job and education opportunities",
+        "Enhance cultural communication"
       ],
-      "outcomes": "أكثر من 70% من المشاركين أصبحوا قادرين على التواصل بشكل أساسي باللغة المستهدفة بعد إكمال الدورة."
+      "outcomes": "More than 70% of participants were able to communicate at a basic level in the target language after completing the course."
     },
     {
       "id": "computer-skills",
-      "title": "مهارات الحاسوب",
+      "title": "Computer Skills",
       "icon": "Layers",
-      "description": "دورات في أساسيات الحاسوب وبرامج الأوفيس والتصميم الجرافيكي وبرمجة المواقع",
-      "details": "تغطي هذه الدورات مجموعة واسعة من المهارات التقنية، بدءاً من أساسيات استخدام الحاسوب وصولاً إلى مهارات متقدمة في التصميم والبرمجة. تتضمن تدريباً عملياً على أحدث البرامج والتقنيات.",
-      "duration": "2-4 أشهر (حسب المستوى)",
-      "sessions": "3 مرات أسبوعياً (ساعتان للجلسة)",
+      "description": "Courses in basic computer skills, office software, graphic design, and web development",
+      "details": "These courses cover a wide range of technical skills from basic computer usage to advanced design and programming, including hands-on training on modern tools and technologies.",
+      "duration": "2-4 months (depending on level)",
+      "sessions": "3 times per week (2 hours per session)",
       "beneficiaries": 620,
-      "ageGroups": ["الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
+      "ageGroups": ["Youth (15-25)", "Adults (25+)"],
       "goals": [
-        "تطوير المهارات الرقمية الأساسية",
-        "إتقان برامج الأوفيس والتصميم",
-        "تأهيل الشباب لسوق العمل الرقمي"
+        "Develop basic digital skills",
+        "Master office and design tools",
+        "Prepare youth for the digital job market"
       ],
-      "outcomes": "65% من خريجي دورات التصميم والبرمجة حصلوا على فرص عمل أو بدأوا مشاريعهم الخاصة."
+      "outcomes": "65% of graduates secured jobs or started their own projects."
     },
     {
       "id": "art-music",
-      "title": "الفنون والموسيقى",
+      "title": "Arts and Music",
       "icon": "Palette",
-      "description": "دورات في الرسم والخط العربي والموسيقى والمسرح للأطفال والشباب",
-      "details": "تهدف هذه الدورات إلى اكتشاف المواهب الفنية وتنميتها، وتوفير مساحة للتعبير الإبداعي. تشمل تدريباً على مختلف الفنون البصرية والأدائية، وتنتهي بمعارض ومسرحيات وحفلات موسيقية.",
-      "duration": "4 أشهر",
-      "sessions": "مرتان أسبوعياً (ساعتان للجلسة)",
+      "description": "Courses in drawing, Arabic calligraphy, music, and theater for children and youth",
+      "details": "These courses aim to discover and develop artistic talents and provide a space for creative expression, ending with exhibitions, plays, and concerts.",
+      "duration": "4 months",
+      "sessions": "Twice a week (2 hours per session)",
       "beneficiaries": 480,
-      "ageGroups": ["الأطفال (6-14 سنة)", "الشباب (15-25 سنة)"],
+      "ageGroups": ["Children (6-14)", "Youth (15-25)"],
       "goals": [
-        "تنمية المواهب الفنية والإبداعية",
-        "تعزيز الثقة بالنفس والتعبير عن الذات",
-        "توفير وسيلة للتفريغ النفسي والعلاج بالفن"
+        "Develop artistic and creative talents",
+        "Enhance self-confidence and self-expression",
+        "Provide emotional relief through art"
       ],
-      "outcomes": "تم تنظيم 12 معرضاً فنياً و8 عروض مسرحية و6 حفلات موسيقية من إنتاج المشاركين."
-    },
-    {
-      "id": "vocational-training",
-      "title": "التدريب المهني",
-      "icon": "Award",
-      "description": "دورات في الخياطة والتطريز والحلاقة والطبخ والإسعافات الأولية",
-      "details": "تقدم هذه الدورات تدريباً عملياً على مهن مطلوبة في سوق العمل المحلي، مع التركيز على الجانب التطبيقي.",
-      "duration": "6 أشهر",
-      "sessions": "3 مرات أسبوعياً (3 ساعات للجلسة)",
-      "beneficiaries": 750,
-      "ageGroups": ["الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
-      "goals": [
-        "تأهيل المشاركين لسوق العمل",
-        "تطوير مهارات مهنية قابلة للتسويق",
-        "تمكين النساء اقتصادياً"
-      ],
-      "outcomes": "55% من المشاركين بدأوا مشاريعهم الخاصة أو حصلوا على وظائف بعد إكمال الدورات."
-    },
-    {
-      "id": "life-skills",
-      "title": "المهارات الحياتية",
-      "icon": "Lightbulb",
-      "description": "دورات في مهارات التواصل والقيادة وإدارة المشاريع وريادة الأعمال",
-      "details": "تركز هذه الدورات على تطوير المهارات الشخصية والاجتماعية والقيادية من خلال تمارين وأنشطة تفاعلية.",
-      "duration": "2 أشهر",
-      "sessions": "مرة أسبوعياً (3 ساعات للجلسة)",
-      "beneficiaries": 420,
-      "ageGroups": ["الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
-      "goals": [
-        "تطوير مهارات التواصل والعمل الجماعي",
-        "تعزيز القدرات القيادية وحل المشكلات",
-        "تنمية مهارات ريادة الأعمال"
-      ],
-      "outcomes": "تم إطلاق 15 مبادرة مجتمعية بقيادة خريجي الدورات."
-    },
-    {
-      "id": "literacy-education",
-      "title": "محو الأمية وتعليم الكبار",
-      "icon": "BookOpen",
-      "description": "دورات للقراءة والكتابة والحساب للكبار",
-      "details": "تهدف إلى تمكين الكبار من المهارات الأساسية في القراءة والكتابة، باستخدام أساليب تعليمية مناسبة لاحتياجاتهم.",
-      "duration": "8 أشهر",
-      "sessions": "3 مرات أسبوعياً (ساعتان للجلسة)",
-      "beneficiaries": 380,
-      "ageGroups": ["البالغين (فوق 25 سنة)"],
-      "goals": [
-        "تمكين الكبار من القراءة والكتابة",
-        "تحسين فرص العمل",
-        "تعزيز قدرة الأهالي على متابعة تعليم أبنائهم"
-      ],
-      "outcomes": "85% من المشاركين أصبحوا قادرين على القراءة والكتابة بشكل أساسي."
+      "outcomes": "12 art exhibitions, 8 theater performances, and 6 concerts were organized."
     }
   ],
-  "statistics": {
-    "participantsGrowth": [
-      { "year": "2018", "count": 450 },
-      { "year": "2019", "count": 820 },
-      { "year": "2020", "count": 1200 },
-      { "year": "2021", "count": 1850 },
-      { "year": "2022", "count": 2400 },
-      { "year": "2023", "count": 3100 },
-      { "year": "2024", "count": 3500 }
-    ],
-    "courseDistribution": [
-      { "name": "دورات اللغات", "value": 25 },
-      { "name": "مهارات الحاسوب", "value": 18 },
-      { "name": "الفنون والموسيقى", "value": 15 },
-      { "name": "التدريب المهني", "value": 22 },
-      { "name": "المهارات الحياتية", "value": 12 },
-      { "name": "محو الأمية", "value": 8 }
-    ],
-    "ageDistribution": [
-      { "name": "الأطفال (6-14)", "value": 35 },
-      { "name": "الشباب (15-25)", "value": 45 },
-      { "name": "البالغين (فوق 25)", "value": 20 }
-    ],
-    "genderDistribution": [
-      { "name": "إناث", "value": 58 },
-      { "name": "ذكور", "value": 42 }
-    ],
-    "employmentImpact": [
-      { "category": "حصلوا على وظائف", "percentage": 42 },
-      { "category": "بدأوا مشاريع خاصة", "percentage": 25 },
-      { "category": "تابعوا تعليمهم", "percentage": 18 },
-      { "category": "أخرى", "percentage": 15 }
-    ],
-    "impactMetrics": {
-      "skillImprovement": 85,
-      "communityEngagement": 72,
-      "employmentRate": 67,
-      "continuedEducation": 58,
-      "psychologicalWellbeing": 78
-    }
-  },
   "communityEvents": [
     {
       "id": "beekeepers",
-      "title": "جمعية النحالين",
+      "title": "Beekeepers Association",
       "icon": "Languages",
-      "description": "اجتماعات الجمعية لعرض أحدث الأدوات المستخدمة.",
-      "details": "جلسات تستهدف تعزيز المعرفة التقنية والمجتمعية عبر المشاركة التفاعلية.",
-      "sessions": "مرتان أسبوعياً",
+      "description": "Association meetings to showcase modern tools.",
+      "details": "Sessions aimed at enhancing technical and community knowledge through interactive participation.",
+      "sessions": "Twice a week",
       "beneficiaries": 100,
-      "ageGroups": ["الأطفال (8-14 سنة)", "الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
+      "ageGroups": ["Children (8-14)", "Youth (15-25)", "Adults (25+)"],
       "goals": [
-        "تعزيز المعرفة التقنية",
-        "رفع الوعي الإنتاجي",
-        "تطوير مهارات المجتمع"
+        "Enhance technical knowledge",
+        "Increase production awareness",
+        "Develop community skills"
       ],
-      "outcomes": "70% من المشاركين حققوا تحسناً ملحوظاً في فهم التقنيات الحديثة."
+      "outcomes": "70% of participants showed noticeable improvement in understanding modern technologies."
     },
     {
       "id": "cultural-lectures",
-      "title": "محاضرات ثقافية",
+      "title": "Cultural Lectures",
       "icon": "Lightbulb",
-      "description": "فعاليات معرفية لتعزيز الوعي والثقافة العامة.",
-      "details": "جلسات متنوعة يقدمها مختصون لتعزيز التفكير النقدي والحوار المجتمعي.",
-      "sessions": "مرتان أسبوعياً",
+      "description": "Knowledge-based events to enhance awareness and culture.",
+      "details": "Sessions led by specialists to promote critical thinking and community dialogue.",
+      "sessions": "Twice a week",
       "beneficiaries": 100,
-      "ageGroups": ["الأطفال (8-14 سنة)", "الشباب (15-25 سنة)", "البالغين (فوق 25 سنة)"],
+      "ageGroups": ["Children (8-14)", "Youth (15-25)", "Adults (25+)"],
       "goals": [
-        "تعزيز التفكير النقدي",
-        "توسيع المدارك الثقافية",
-        "تنمية الحوار المجتمعي"
+        "Enhance critical thinking",
+        "Expand cultural awareness",
+        "Promote community dialogue"
       ],
-      "outcomes": "ساهمت الفعاليات في زيادة الوعي والانخراط المجتمعي بنسبة واضحة."
+      "outcomes": "Events contributed to increased awareness and community engagement."
     }
   ]
 }
